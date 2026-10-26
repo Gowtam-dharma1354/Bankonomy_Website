@@ -36,8 +36,10 @@ export function Round3() {
   );
 
   useEffect(() => {
+    // Wait for the first fetch; an empty state is not a finished round.
+    if (!state) return;
     if (slice?.status !== "in_progress") nav("/lobby");
-  }, [slice?.status, nav]);
+  }, [state, slice?.status, nav]);
 
   useEffect(() => {
     if (!qid || !hasLeverage) return;

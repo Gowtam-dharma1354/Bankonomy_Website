@@ -33,8 +33,10 @@ export function Round2() {
       nav("/login", { replace: true });
       return;
     }
+    // Wait for the first fetch; an empty state is not a finished round.
+    if (!state) return;
     if (slice?.status !== "in_progress") nav("/lobby", { replace: true });
-  }, [slice?.status, nav]);
+  }, [state, slice?.status, nav]);
 
   useEffect(() => {
     if (!qid) return;
