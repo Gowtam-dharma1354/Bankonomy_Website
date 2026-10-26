@@ -11,11 +11,25 @@ export function AdminLogin() {
   async function onSubmit(e: FormEvent) {
     e.preventDefault();
     setError(null);
-    const { error: err } = await supabase.auth.signInWithPassword({ email, password });
-    if (err) {
-      setError(err.message);
+
+    const { data: signInData, error: err } = await supabase.auth.signInWithPassword({ email, password });
+    if (err || !signInData.user) {
+      setError(err?.message ?? "Admin sign-in failed.");
       return;
     }
+
+    const { data: adminRow, error: adminErr } = await supabase
+      .from("admin_users")
+      .select("user_id")
+      .eq("user_id", signInData.user.id)
+      .maybeSingle();
+
+    if (adminErr || !adminRow) {
+      await supabase.auth.signOut();
+      setError("This account is not registered as an admin in Supabase.");
+      return;
+    }
+
     nav("/admin");
   }
 

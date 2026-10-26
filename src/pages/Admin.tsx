@@ -122,6 +122,7 @@ export function Admin() {
   const [events, setEvents] = useState<EventRow[]>([]);
   const [roundStatuses, setRoundStatuses] = useState<Record<number, string>>({});
   const [roundActionError, setRoundActionError] = useState<string | null>(null);
+  const [loadError, setLoadError] = useState<string | null>(null);
   const [busyRound, setBusyRound] = useState<number | null>(null);
   const [expanded, setExpanded] = useState({ r1: false, r2: false, r3: false });
   const [search, setSearch] = useState("");
@@ -135,7 +136,7 @@ export function Admin() {
   const [registeredCode, setRegisteredCode] = useState<string | null>(null);
 
   const refresh = useCallback(async () => {
-    const [o, a, b, c, ev, rounds] = await Promise.all([
+    const results = await Promise.allSettled([
       supabase.from("overall_standings").select("*").order("rank"),
       supabase.from("round1_standings").select("*").order("rank"),
       supabase.from("round2_standings").select("*").order("rank"),
@@ -143,19 +144,42 @@ export function Admin() {
       supabase.from("events").select("*").order("created_at", { ascending: false }).limit(500),
       supabase.from("rounds_config").select("round, status").order("round"),
     ]);
-    if (o.data) setOverall(o.data as OverallRow[]);
-    if (a.data) setR1(a.data as R1Row[]);
-    if (b.data) setR2(b.data as R2Row[]);
-    if (c.data) setR3(c.data as R3Row[]);
-    if (ev.data) setEvents(ev.data as EventRow[]);
-    if (rounds.data) {
+
+    const firstError = results.find((r) => r.status === "rejected");
+    if (firstError) {
+      setLoadError(firstError.reason instanceof Error ? firstError.reason.message : "Failed to load admin data.");
+    } else {
+      setLoadError(null);
+    }
+
+    const [o, a, b, c, ev, rounds] = results.map((r) => (r.status === "fulfilled" ? r.value : null));
+    if (o?.data) setOverall(o.data as OverallRow[]);
+    if (a?.data) setR1(a.data as R1Row[]);
+    if (b?.data) setR2(b.data as R2Row[]);
+    if (c?.data) setR3(c.data as R3Row[]);
+    if (ev?.data) setEvents(ev.data as EventRow[]);
+    if (rounds?.data) {
       setRoundStatuses(Object.fromEntries(rounds.data.map(({ round, status }) => [round, status])));
     }
   }, []);
 
   useEffect(() => {
-    void supabase.auth.getSession().then(({ data }) => {
-      if (!data.session) nav("/admin/login");
+    void supabase.auth.getSession().then(async ({ data }) => {
+      if (!data.session) {
+        nav("/admin/login");
+        return;
+      }
+
+      const { data: adminRow } = await supabase
+        .from("admin_users")
+        .select("user_id")
+        .eq("user_id", data.session.user.id)
+        .maybeSingle();
+
+      if (!adminRow) {
+        await supabase.auth.signOut();
+        nav("/admin/login");
+      }
     });
   }, [nav]);
 
@@ -335,6 +359,8 @@ export function Admin() {
           Audit log
         </button>
       </div>
+
+      {loadError && <div className="card error" style={{ margin: "16px 0" }}>{loadError}</div>}
 
       {tab === "standings" && (
         <>

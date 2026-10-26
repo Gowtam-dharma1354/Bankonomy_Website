@@ -8,7 +8,7 @@ CREATE EXTENSION IF NOT EXISTS pgcrypto;
 -- ---------------------------------------------------------------------------
 
 CREATE TABLE teams (
-  id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
+  id uuid PRIMARY KEY DEFAULT extensions.gen_random_uuid(),
   name text NOT NULL,
   batch text NOT NULL,
   code text NOT NULL UNIQUE,
@@ -17,14 +17,14 @@ CREATE TABLE teams (
 );
 
 CREATE TABLE members (
-  id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
+  id uuid PRIMARY KEY DEFAULT extensions.gen_random_uuid(),
   team_id uuid NOT NULL REFERENCES teams(id) ON DELETE CASCADE,
   name text NOT NULL,
   email text NOT NULL
 );
 
 CREATE TABLE team_sessions (
-  id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
+  id uuid PRIMARY KEY DEFAULT extensions.gen_random_uuid(),
   team_id uuid NOT NULL REFERENCES teams(id) ON DELETE CASCADE,
   token_hash text NOT NULL UNIQUE,
   created_at timestamptz NOT NULL DEFAULT now(),
@@ -58,7 +58,7 @@ CREATE TABLE team_round_state (
 );
 
 CREATE TABLE answers (
-  id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
+  id uuid PRIMARY KEY DEFAULT extensions.gen_random_uuid(),
   team_id uuid NOT NULL REFERENCES teams(id) ON DELETE CASCADE,
   question_id text NOT NULL,
   selected_option text,
@@ -78,7 +78,7 @@ CREATE TABLE leverage_choices (
 );
 
 CREATE TABLE events (
-  id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
+  id uuid PRIMARY KEY DEFAULT extensions.gen_random_uuid(),
   team_id uuid REFERENCES teams(id) ON DELETE SET NULL,
   round int,
   event_type text NOT NULL,
@@ -121,7 +121,7 @@ RETURNS text
 LANGUAGE sql
 IMMUTABLE
 AS $$
-  SELECT encode(digest(p_token, 'sha256'), 'hex');
+  SELECT encode(extensions.digest(p_token, 'sha256'), 'hex');
 $$;
 
 CREATE OR REPLACE FUNCTION public.verify_team_session(p_token text)
@@ -487,7 +487,7 @@ SET search_path = public
 AS $$
 DECLARE
   v_team teams%ROWTYPE;
-  v_token text := encode(gen_random_bytes(32), 'hex');
+  v_token text := encode(extensions.gen_random_bytes(32), 'hex');
 BEGIN
   SELECT * INTO v_team FROM teams WHERE code = upper(trim(p_code));
   IF NOT FOUND THEN
@@ -925,7 +925,18 @@ BEGIN
 
   SELECT * INTO v_rc FROM rounds_config WHERE round = p_round FOR UPDATE;
 
-  IF p_status = 'paused' AND v_rc.status = 'active' THEN
+  IF p_status = 'active' THEN
+    UPDATE rounds_config SET
+      status = CASE
+        WHEN round = p_round THEN 'active'
+        WHEN round < p_round THEN 'ended'
+        ELSE 'lobby'
+      END,
+      pause_started_at = CASE WHEN round = p_round THEN NULL ELSE pause_started_at END,
+      updated_at = now()
+    WHERE round IN (1, 2, 3);
+
+  ELSIF p_status = 'paused' AND v_rc.status = 'active' THEN
     UPDATE rounds_config SET status = 'paused', pause_started_at = now(), updated_at = now() WHERE round = p_round;
   ELSIF p_status = 'active' AND v_rc.status = 'paused' THEN
     UPDATE rounds_config SET

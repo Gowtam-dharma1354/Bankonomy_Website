@@ -29,7 +29,11 @@ export function Round2() {
   );
 
   useEffect(() => {
-    if (slice?.status !== "in_progress") nav("/lobby");
+    if (!getSessionToken()) {
+      nav("/login", { replace: true });
+      return;
+    }
+    if (slice?.status !== "in_progress") nav("/lobby", { replace: true });
   }, [slice?.status, nav]);
 
   useEffect(() => {

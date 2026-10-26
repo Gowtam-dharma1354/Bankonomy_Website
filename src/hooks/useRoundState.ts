@@ -1,10 +1,10 @@
 import { useCallback, useEffect, useState } from "react";
-import { getSessionToken } from "../lib/session";
+import { clearSessionToken, getSessionToken } from "../lib/session";
 import { rpcGetRoundState } from "../lib/rpc";
 import { setServerClockOffset } from "../lib/serverClock";
 import type { RoundStatePayload } from "../types/api";
 
-export function useRoundState(pollMs = 8000) {
+export function useRoundState(pollMs = 2000) {
   const [state, setState] = useState<RoundStatePayload | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
@@ -23,7 +23,16 @@ export function useRoundState(pollMs = 8000) {
       setError(null);
       return data;
     } catch (e) {
-      setError(e instanceof Error ? e.message : "fetch_failed");
+      const message = e instanceof Error ? e.message : "fetch_failed";
+      const isStaleOrInvalidSession = /invalid|expired|session|token|permission|not found|unauthorized|PGRST116|404/i.test(message);
+
+      if (isStaleOrInvalidSession) {
+        clearSessionToken();
+        setState(null);
+        setError("session_expired");
+      } else {
+        setError(message);
+      }
       return null;
     } finally {
       setLoading(false);

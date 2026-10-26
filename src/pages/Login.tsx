@@ -1,8 +1,8 @@
-import { useState, type FormEvent } from "react";
+import { useEffect, useState, type FormEvent } from "react";
 import { useNavigate } from "react-router-dom";
 import { enterFullscreen } from "../components/FullscreenGuard";
 import { rpcLoginWithCode, rpcServerNow } from "../lib/rpc";
-import { setSessionToken } from "../lib/session";
+import { getSessionToken, setSessionToken } from "../lib/session";
 import { setServerClockOffset } from "../lib/serverClock";
 
 export function Login() {
@@ -10,6 +10,11 @@ export function Login() {
   const [code, setCode] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    const token = getSessionToken();
+    if (token) nav("/lobby", { replace: true });
+  }, [nav]);
 
   async function onSubmit(e: FormEvent) {
     e.preventDefault();
