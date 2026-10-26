@@ -1,0 +1,386 @@
+[
+  {
+    "id": "r2-case1",
+    "title": "[PLACEHOLDER] Case 1 Title",
+    "caseText": "[PLACEHOLDER] Long case study text for Round 2 Case 1. Paste the full narrative here.",
+    "summary": "[PLACEHOLDER] Optional summary — Case 1",
+    "questions": [
+      {
+        "id": "r2-c1-q1",
+        "question": "[PLACEHOLDER] Round 2 Case 1 Question 1",
+        "options": [
+          {
+            "id": "A",
+            "text": "[PLACEHOLDER] Option A — replace with real text"
+          },
+          {
+            "id": "B",
+            "text": "[PLACEHOLDER] Option B — replace with real text"
+          },
+          {
+            "id": "C",
+            "text": "[PLACEHOLDER] Option C — replace with real text"
+          },
+          {
+            "id": "D",
+            "text": "[PLACEHOLDER] Option D — replace with real text"
+          }
+        ]
+      },
+      {
+        "id": "r2-c1-q2",
+        "question": "[PLACEHOLDER] Round 2 Case 1 Question 2",
+        "options": [
+          {
+            "id": "A",
+            "text": "[PLACEHOLDER] Option A — replace with real text"
+          },
+          {
+            "id": "B",
+            "text": "[PLACEHOLDER] Option B — replace with real text"
+          },
+          {
+            "id": "C",
+            "text": "[PLACEHOLDER] Option C — replace with real text"
+          },
+          {
+            "id": "D",
+            "text": "[PLACEHOLDER] Option D — replace with real text"
+          }
+        ]
+      },
+      {
+        "id": "r2-c1-q3",
+        "question": "[PLACEHOLDER] Round 2 Case 1 Question 3",
+        "options": [
+          {
+            "id": "A",
+            "text": "[PLACEHOLDER] Option A — replace with real text"
+          },
+          {
+            "id": "B",
+            "text": "[PLACEHOLDER] Option B — replace with real text"
+          },
+          {
+            "id": "C",
+            "text": "[PLACEHOLDER] Option C — replace with real text"
+          },
+          {
+            "id": "D",
+            "text": "[PLACEHOLDER] Option D — replace with real text"
+          }
+        ]
+      },
+      {
+        "id": "r2-c1-q4",
+        "question": "[PLACEHOLDER] Round 2 Case 1 Question 4",
+        "options": [
+          {
+            "id": "A",
+            "text": "[PLACEHOLDER] Option A — replace with real text"
+          },
+          {
+            "id": "B",
+            "text": "[PLACEHOLDER] Option B — replace with real text"
+          },
+          {
+            "id": "C",
+            "text": "[PLACEHOLDER] Option C — replace with real text"
+          },
+          {
+            "id": "D",
+            "text": "[PLACEHOLDER] Option D — replace with real text"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "r2-case2",
+    "title": "[PLACEHOLDER] Case 2 Title",
+    "caseText": "[PLACEHOLDER] Long case study text for Round 2 Case 2. Paste the full narrative here.",
+    "summary": "[PLACEHOLDER] Optional summary — Case 2",
+    "questions": [
+      {
+        "id": "r2-c2-q1",
+        "question": "[PLACEHOLDER] Round 2 Case 2 Question 1",
+        "options": [
+          {
+            "id": "A",
+            "text": "[PLACEHOLDER] Option A — replace with real text"
+          },
+          {
+            "id": "B",
+            "text": "[PLACEHOLDER] Option B — replace with real text"
+          },
+          {
+            "id": "C",
+            "text": "[PLACEHOLDER] Option C — replace with real text"
+          },
+          {
+            "id": "D",
+            "text": "[PLACEHOLDER] Option D — replace with real text"
+          }
+        ]
+      },
+      {
+        "id": "r2-c2-q2",
+        "question": "[PLACEHOLDER] Round 2 Case 2 Question 2",
+        "options": [
+          {
+            "id": "A",
+            "text": "[PLACEHOLDER] Option A — replace with real text"
+          },
+          {
+            "id": "B",
+            "text": "[PLACEHOLDER] Option B — replace with real text"
+          },
+          {
+            "id": "C",
+            "text": "[PLACEHOLDER] Option C — replace with real text"
+          },
+          {
+            "id": "D",
+            "text": "[PLACEHOLDER] Option D — replace with real text"
+          }
+        ]
+      },
+      {
+        "id": "r2-c2-q3",
+        "question": "[PLACEHOLDER] Round 2 Case 2 Question 3",
+        "options": [
+          {
+            "id": "A",
+            "text": "[PLACEHOLDER] Option A — replace with real text"
+          },
+          {
+            "id": "B",
+            "text": "[PLACEHOLDER] Option B — replace with real text"
+          },
+          {
+            "id": "C",
+            "text": "[PLACEHOLDER] Option C — replace with real text"
+          },
+          {
+            "id": "D",
+            "text": "[PLACEHOLDER] Option D — replace with real text"
+          }
+        ]
+      },
+      {
+        "id": "r2-c2-q4",
+        "question": "[PLACEHOLDER] Round 2 Case 2 Question 4",
+        "options": [
+          {
+            "id": "A",
+            "text": "[PLACEHOLDER] Option A — replace with real text"
+          },
+          {
+            "id": "B",
+            "text": "[PLACEHOLDER] Option B — replace with real text"
+          },
+          {
+            "id": "C",
+            "text": "[PLACEHOLDER] Option C — replace with real text"
+          },
+          {
+            "id": "D",
+            "text": "[PLACEHOLDER] Option D — replace with real text"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "r2-case3",
+    "title": "[PLACEHOLDER] Case 3 Title",
+    "caseText": "[PLACEHOLDER] Long case study text for Round 2 Case 3. Paste the full narrative here.",
+    "summary": "[PLACEHOLDER] Optional summary — Case 3",
+    "questions": [
+      {
+        "id": "r2-c3-q1",
+        "question": "[PLACEHOLDER] Round 2 Case 3 Question 1",
+        "options": [
+          {
+            "id": "A",
+            "text": "[PLACEHOLDER] Option A — replace with real text"
+          },
+          {
+            "id": "B",
+            "text": "[PLACEHOLDER] Option B — replace with real text"
+          },
+          {
+            "id": "C",
+            "text": "[PLACEHOLDER] Option C — replace with real text"
+          },
+          {
+            "id": "D",
+            "text": "[PLACEHOLDER] Option D — replace with real text"
+          }
+        ]
+      },
+      {
+        "id": "r2-c3-q2",
+        "question": "[PLACEHOLDER] Round 2 Case 3 Question 2",
+        "options": [
+          {
+            "id": "A",
+            "text": "[PLACEHOLDER] Option A — replace with real text"
+          },
+          {
+            "id": "B",
+            "text": "[PLACEHOLDER] Option B — replace with real text"
+          },
+          {
+            "id": "C",
+            "text": "[PLACEHOLDER] Option C — replace with real text"
+          },
+          {
+            "id": "D",
+            "text": "[PLACEHOLDER] Option D — replace with real text"
+          }
+        ]
+      },
+      {
+        "id": "r2-c3-q3",
+        "question": "[PLACEHOLDER] Round 2 Case 3 Question 3",
+        "options": [
+          {
+            "id": "A",
+            "text": "[PLACEHOLDER] Option A — replace with real text"
+          },
+          {
+            "id": "B",
+            "text": "[PLACEHOLDER] Option B — replace with real text"
+          },
+          {
+            "id": "C",
+            "text": "[PLACEHOLDER] Option C — replace with real text"
+          },
+          {
+            "id": "D",
+            "text": "[PLACEHOLDER] Option D — replace with real text"
+          }
+        ]
+      },
+      {
+        "id": "r2-c3-q4",
+        "question": "[PLACEHOLDER] Round 2 Case 3 Question 4",
+        "options": [
+          {
+            "id": "A",
+            "text": "[PLACEHOLDER] Option A — replace with real text"
+          },
+          {
+            "id": "B",
+            "text": "[PLACEHOLDER] Option B — replace with real text"
+          },
+          {
+            "id": "C",
+            "text": "[PLACEHOLDER] Option C — replace with real text"
+          },
+          {
+            "id": "D",
+            "text": "[PLACEHOLDER] Option D — replace with real text"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "r2-case4",
+    "title": "[PLACEHOLDER] Case 4 Title",
+    "caseText": "[PLACEHOLDER] Long case study text for Round 2 Case 4. Paste the full narrative here.",
+    "summary": "[PLACEHOLDER] Optional summary — Case 4",
+    "questions": [
+      {
+        "id": "r2-c4-q1",
+        "question": "[PLACEHOLDER] Round 2 Case 4 Question 1",
+        "options": [
+          {
+            "id": "A",
+            "text": "[PLACEHOLDER] Option A — replace with real text"
+          },
+          {
+            "id": "B",
+            "text": "[PLACEHOLDER] Option B — replace with real text"
+          },
+          {
+            "id": "C",
+            "text": "[PLACEHOLDER] Option C — replace with real text"
+          },
+          {
+            "id": "D",
+            "text": "[PLACEHOLDER] Option D — replace with real text"
+          }
+        ]
+      },
+      {
+        "id": "r2-c4-q2",
+        "question": "[PLACEHOLDER] Round 2 Case 4 Question 2",
+        "options": [
+          {
+            "id": "A",
+            "text": "[PLACEHOLDER] Option A — replace with real text"
+          },
+          {
+            "id": "B",
+            "text": "[PLACEHOLDER] Option B — replace with real text"
+          },
+          {
+            "id": "C",
+            "text": "[PLACEHOLDER] Option C — replace with real text"
+          },
+          {
+            "id": "D",
+            "text": "[PLACEHOLDER] Option D — replace with real text"
+          }
+        ]
+      },
+      {
+        "id": "r2-c4-q3",
+        "question": "[PLACEHOLDER] Round 2 Case 4 Question 3",
+        "options": [
+          {
+            "id": "A",
+            "text": "[PLACEHOLDER] Option A — replace with real text"
+          },
+          {
+            "id": "B",
+            "text": "[PLACEHOLDER] Option B — replace with real text"
+          },
+          {
+            "id": "C",
+            "text": "[PLACEHOLDER] Option C — replace with real text"
+          },
+          {
+            "id": "D",
+            "text": "[PLACEHOLDER] Option D — replace with real text"
+          }
+        ]
+      },
+      {
+        "id": "r2-c4-q4",
+        "question": "[PLACEHOLDER] Round 2 Case 4 Question 4",
+        "options": [
+          {
+            "id": "A",
+            "text": "[PLACEHOLDER] Option A — replace with real text"
+          },
+          {
+            "id": "B",
+            "text": "[PLACEHOLDER] Option B — replace with real text"
+          },
+          {
+            "id": "C",
+            "text": "[PLACEHOLDER] Option C — replace with real text"
+          },
+          {
+            "id": "D",
+            "text": "[PLACEHOLDER] Option D — replace with real text"
+          }
+        ]
+      }
+    ]
+  }
+]
