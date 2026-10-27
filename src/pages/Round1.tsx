@@ -72,17 +72,20 @@ export function Round1() {
     <FullscreenGuard round={1}>
       <div className="round-page no-select" onContextMenu={(e) => e.preventDefault()}>
         <header className="round-header">
-          <div>
-            <span className="team-name round-team-name">{state.team_name}</span>
-            <span className="mono">
+          <div className="round-identity">
+            <p className="round-event-name">Bankonomy <span>· Banking and Economy Club</span></p>
+            <h1>Round 1</h1>
+            <p className="round-team-name">Team <strong>{state.team_name}</strong></p>
+            <span className="round-progress">
               Question {Math.min(idx + 1, order.length)} / {order.length}
             </span>
-            <h1>Round 1</h1>
           </div>
           <div className="round-header-right">
-            <ViolationBadge violations={slice.violations} />
-            <Timer deadlineIso={slice.deadline} label="Round" onExpire={onRoundExpire} />
-            <BonusTimer startedAtIso={answerRow?.started_at ?? null} />
+            <div className="round-metric-card round-violation-card"><ViolationBadge violations={slice.violations} /></div>
+            <div className="round-metric-card round-timer-card">
+              <Timer deadlineIso={slice.deadline} label="Time remaining" onExpire={onRoundExpire} />
+              <BonusTimer startedAtIso={answerRow?.started_at ?? null} />
+            </div>
           </div>
         </header>
         <QuestionCard question={question} selected={selected} onSelect={setSelected} disabled={submitting} />

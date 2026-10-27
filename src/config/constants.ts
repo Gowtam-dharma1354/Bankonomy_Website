@@ -4,4 +4,4 @@ export const VIOLATION_THRESHOLD = 3;
 /** Round 3 total duration (must match server migration). */
 export const ROUND3_DURATION_MINUTES = 30;
 
-export const BATCH_OPTIONS = ["2024", "2025", "2026", "Other"] as const;
+export const BATCH_OPTIONS = ["PGDM1", "PGDM2", "PGPISM", "LLM", "PGCSM"] as const;

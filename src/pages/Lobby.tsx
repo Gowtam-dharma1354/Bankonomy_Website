@@ -18,6 +18,37 @@ function activeRound(state: ReturnType<typeof useRoundState>["state"]) {
   return null;
 }
 
+function lobbyMessage(state: NonNullable<ReturnType<typeof useRoundState>["state"]>) {
+  const completed = (status: string) => status === "completed" || status === "auto_finalized";
+
+  if (completed(state.round_3.status)) {
+    return {
+      eyebrow: "Bankonomy · Event complete",
+      title: "Round 3 completed",
+      message: "Your event participation is complete. Please wait for the results.",
+    };
+  }
+  if (completed(state.round_2.status)) {
+    return {
+      eyebrow: "Round 2 complete",
+      title: "Round 2 completed",
+      message: "Your submission is recorded. Please wait for Round 3 to begin.",
+    };
+  }
+  if (completed(state.round_1.status)) {
+    return {
+      eyebrow: "Round 1 complete",
+      title: "Round 1 completed",
+      message: "Please wait here. You will continue when Round 2 opens.",
+    };
+  }
+  return {
+    eyebrow: "Bankonomy · Team lobby",
+    title: "Lobby",
+    message: "Wait here for the admin to open your round.",
+  };
+}
+
 export function Lobby() {
   const nav = useNavigate();
   const { state, loading, error } = useRoundState();
@@ -56,14 +87,19 @@ export function Lobby() {
     }
   }, [state, loading, error, nav]);
 
+  const message = state ? lobbyMessage(state) : null;
+
   return (
     <FullscreenGuard round={null}>
-      <div className="page-center">
-        <div className="card lobby-card">
-          <h1>Lobby</h1>
-          {state && <p className="team-name">{state.team_name}</p>}
-          <p>Wait for the admin to open your round. You will re-enter your team code when the round begins.</p>
-          {loading && <p>Syncing…</p>}
+      <div className="player-transition-page">
+        <div className="player-transition-content">
+          <p className="player-transition-eyebrow">{message?.eyebrow ?? "Bankonomy · Connecting"}</p>
+          <h1>{message?.title ?? "Syncing your team…"}</h1>
+          {state?.team_name && <p className="player-transition-team">{state.team_name}</p>}
+          <p className="player-transition-message">
+            {message?.message ?? (loading ? "Connecting to the event server." : "Waiting for team status.")}
+          </p>
+          {loading && <span className="player-transition-indicator" aria-label="Syncing" />}
         </div>
       </div>
     </FullscreenGuard>

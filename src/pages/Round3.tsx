@@ -76,16 +76,19 @@ export function Round3() {
     <FullscreenGuard round={3}>
       <div className="round-page">
         <header className="round-header">
-          <div>
-            <span className="team-name round-team-name">{state.team_name}</span>
-            <span className="mono">
-              Case {caseIdx + 1} / {caseOrder.length} · {ROUND3_DURATION_MINUTES} min round
-            </span>
+          <div className="round-identity">
+            <p className="round-event-name">Bankonomy <span>· Banking and Economy Club</span></p>
             <h1>Round 3</h1>
+            <p className="round-team-name">Team <strong>{state.team_name}</strong></p>
+            <span className="round-progress">
+              Case {caseIdx + 1} / {caseOrder.length} · Question {qIdx + 1} / {caseStudy.questions.length} · {ROUND3_DURATION_MINUTES} min
+            </span>
           </div>
           <div className="round-header-right">
-            <ViolationBadge violations={slice.violations} />
-            <Timer deadlineIso={slice.deadline} label="Round" onExpire={onRoundExpire} />
+            <div className="round-metric-card round-violation-card"><ViolationBadge violations={slice.violations} /></div>
+            <div className="round-metric-card round-timer-card">
+              <Timer deadlineIso={slice.deadline} label="Time remaining" onExpire={onRoundExpire} />
+            </div>
           </div>
         </header>
         {!hasLeverage ? (

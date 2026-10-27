@@ -92,6 +92,25 @@ function statusLabel(row: { disqualified: boolean; status?: string | null }) {
   return "Waiting";
 }
 
+function overallStatusLabel(row: OverallRow, roundRows: { team_id: string; status: string | null }[][]) {
+  if (row.disqualified) return "Disqualified";
+  const teamRounds = roundRows.map((rows) => rows.find((round) => round.team_id === row.team_id));
+  if (teamRounds.some((round) => round?.status === "in_progress")) return "Active";
+  if (teamRounds.every((round) => round?.status === "completed" || round?.status === "auto_finalized")) {
+    return "Completed";
+  }
+  return "Waiting";
+}
+
+function formatDuration(seconds: number | null) {
+  if (seconds === null) return "—";
+  const total = Math.max(0, Math.floor(seconds));
+  const hours = Math.floor(total / 3600);
+  const minutes = Math.floor((total % 3600) / 60);
+  const remainingSeconds = total % 60;
+  return [hours, minutes, remainingSeconds].map((part) => String(part).padStart(2, "0")).join(":");
+}
+
 function toCsv(rows: Record<string, unknown>[]) {
   if (!rows.length) return "";
   const keys = Object.keys(rows[0]);
@@ -288,7 +307,7 @@ export function Admin() {
       <header className="admin-header">
         <div>
           <div className="brand-nism">NISM</div>
-          <div className="brand-club">FINTECH &amp; QUANT CLUB</div>
+          <div className="brand-club">Banking and Economy Club</div>
           <h1 className="brand-event">BANKONOMY</h1>
         </div>
         <button type="button" className="btn btn-ghost" onClick={() => void signOut()}>
@@ -425,7 +444,7 @@ export function Admin() {
                       <td>{row.round3_score}</td>
                       <td>{row.total_score}</td>
                       <td>{row.tab_switches}</td>
-                      <td>{statusLabel(row)}</td>
+                      <td>{overallStatusLabel(row, [r1, r2, r3])}</td>
                       <td className="actions-cell">
                         <button type="button" onClick={() => void rpcAdminDisqualify(row.team_id, true).then(refresh)}>DQ</button>
                         <button type="button" onClick={() => void rpcAdminResetSession(row.team_id).then(refresh)}>Reset</button>
@@ -487,7 +506,7 @@ export function Admin() {
                       <td>{row.total_score}</td>
                       <td>{row.questions_solved}</td>
                       <td>{currentQuestion(row.team_id)}</td>
-                      <td>{row.time_taken ?? "—"}</td>
+                      <td>{formatDuration(row.time_taken)}</td>
                       <td>{row.tab_switches}</td>
                       <td>{row.fullscreen_exits}</td>
                       <td>{statusLabel(row)}</td>
@@ -524,7 +543,7 @@ export function Admin() {
                       <td>{row.total_score}</td>
                       <td>{row.cases_solved}</td>
                       <td>{currentCase(row.team_id, 2)}</td>
-                      <td>{row.time_taken ?? "—"}</td>
+                      <td>{formatDuration(row.time_taken)}</td>
                       <td>{row.tab_switches}</td>
                       <td>{statusLabel(row)}</td>
                     </tr>
@@ -566,7 +585,7 @@ export function Admin() {
                       <td>{row.case2_score}</td>
                       <td>{row.total_score}</td>
                       <td>{currentCase(row.team_id, 3)}</td>
-                      <td>{row.time_taken ?? "—"}</td>
+                      <td>{formatDuration(row.time_taken)}</td>
                       <td>{row.tab_switches}</td>
                       <td>{statusLabel(row)}</td>
                     </tr>

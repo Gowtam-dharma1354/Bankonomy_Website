@@ -29,6 +29,13 @@ export function FullscreenGuard({ round, children, requireOnMount = false }: Pro
     if (fs) setReady(true);
   }, []);
 
+  const restoreFullscreen = useCallback(async () => {
+    const entered = await enterFullscreen();
+    const fs = !!document.fullscreenElement;
+    setBlocked(!fs);
+    if (entered && fs) setReady(true);
+  }, []);
+
   useEffect(() => {
     if (requireOnMount) {
       void enterFullscreen().then(() => check());
@@ -45,6 +52,7 @@ export function FullscreenGuard({ round, children, requireOnMount = false }: Pro
         if (token) void rpcLogEvent(token, round, "fullscreen_exit");
       } else {
         setBlocked(false);
+        setReady(true);
       }
     };
     document.addEventListener("fullscreenchange", onFs);
@@ -74,7 +82,7 @@ export function FullscreenGuard({ round, children, requireOnMount = false }: Pro
     return (
       <div className="overlay-block">
         <p>Enter fullscreen to continue.</p>
-        <button type="button" className="btn btn-primary" onClick={() => void enterFullscreen()}>
+        <button type="button" className="btn btn-primary" onClick={() => void restoreFullscreen()}>
           Go fullscreen
         </button>
       </div>
@@ -87,7 +95,7 @@ export function FullscreenGuard({ round, children, requireOnMount = false }: Pro
       {blocked && (
         <div className="overlay-block">
           <p>Return to fullscreen to continue</p>
-          <button type="button" className="btn btn-primary" onClick={() => void enterFullscreen()}>
+            <button type="button" className="btn btn-primary" onClick={() => void restoreFullscreen()}>
             Return to fullscreen
           </button>
         </div>

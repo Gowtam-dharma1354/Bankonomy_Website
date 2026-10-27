@@ -19,7 +19,7 @@ Vite + React + TypeScript competition site backed by Supabase (Postgres, Realtim
 
 3. **Database**
 
-   Apply `supabase/migrations/001_init.sql` in the Supabase SQL editor (or via CLI).
+   Apply `supabase/migrations/001_init.sql` in the Supabase SQL editor (or via CLI). For an existing installation, also apply subsequent numbered SQL files in `supabase/migrations/` in order.
 
    - Enable **pg_cron** in the dashboard if the extension block fails on first run, then re-run the cron schedule section.
    - Create an admin Auth user in Supabase, then insert their UUID into `admin_users`:

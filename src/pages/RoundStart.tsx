@@ -38,8 +38,9 @@ export function RoundStart() {
 
   return (
     <FullscreenGuard round={round} requireOnMount>
-      <div className="page-center">
-        <form className="card login-card" onSubmit={onSubmit}>
+      <div className="page-center round-start-page">
+        <form className="card login-card round-start-card" onSubmit={onSubmit}>
+          <p className="round-start-kicker">Bankonomy · Team access</p>
           <h1>Start Round {round}</h1>
           <p>Re-enter your team code to begin. Timers are server-side.</p>
           <label>

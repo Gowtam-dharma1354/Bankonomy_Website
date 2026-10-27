@@ -42,7 +42,16 @@ export function useRoundState(pollMs = 2000) {
   useEffect(() => {
     void refresh();
     const id = setInterval(() => void refresh(), pollMs);
-    return () => clearInterval(id);
+    const refreshWhenVisible = () => {
+      if (document.visibilityState === "visible") void refresh();
+    };
+    document.addEventListener("visibilitychange", refreshWhenVisible);
+    window.addEventListener("focus", refreshWhenVisible);
+    return () => {
+      clearInterval(id);
+      document.removeEventListener("visibilitychange", refreshWhenVisible);
+      window.removeEventListener("focus", refreshWhenVisible);
+    };
   }, [refresh, pollMs]);
 
   return { state, error, loading, refresh };
