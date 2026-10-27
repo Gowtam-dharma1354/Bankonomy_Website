@@ -54,6 +54,15 @@ export async function rpcSubmitAnswer(token: string, questionId: string, selecte
   return data as { points: number; bonus: number; submitted_at: string };
 }
 
+export async function rpcPreviousQuestion(token: string, round: 2 | 3) {
+  const { data, error } = await supabase.rpc("previous_question", {
+    p_token: token,
+    p_round: round,
+  });
+  if (error) throw error;
+  return data as RoundStatePayload;
+}
+
 export async function rpcSubmitCase(token: string, caseId: string) {
   const { data, error } = await supabase.rpc("submit_case", {
     p_token: token,

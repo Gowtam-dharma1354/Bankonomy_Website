@@ -23,27 +23,27 @@ function lobbyMessage(state: NonNullable<ReturnType<typeof useRoundState>["state
 
   if (completed(state.round_3.status)) {
     return {
-      eyebrow: "Bankonomy · Event complete",
+      eyebrow: "BANKONOMY",
       title: "Round 3 completed",
       message: "Your event participation is complete. Please wait for the results.",
     };
   }
   if (completed(state.round_2.status)) {
     return {
-      eyebrow: "Round 2 complete",
+      eyebrow: "BANKONOMY",
       title: "Round 2 completed",
       message: "Your submission is recorded. Please wait for Round 3 to begin.",
     };
   }
   if (completed(state.round_1.status)) {
     return {
-      eyebrow: "Round 1 complete",
+      eyebrow: "BANKONOMY",
       title: "Round 1 completed",
-      message: "Please wait here. You will continue when Round 2 opens.",
+      message: "Your submission is recorded. Please wait for Round 2 to begin.",
     };
   }
   return {
-    eyebrow: "Bankonomy · Team lobby",
+    eyebrow: "BANKONOMY",
     title: "Lobby",
     message: "Wait here for the admin to open your round.",
   };

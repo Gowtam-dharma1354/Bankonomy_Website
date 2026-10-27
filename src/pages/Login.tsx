@@ -74,9 +74,6 @@ export function Login() {
         <button type="submit" className="btn btn-primary" disabled={loading}>
           {loading ? "Entering…" : "Enter event"}
         </button>
-        <p className="hint">
-          <a href="/admin">Admin login</a>
-        </p>
       </form>
     </div>
   );

@@ -7,7 +7,7 @@ import { ViolationBadge } from "../components/ViolationBadge";
 import { useRoundState } from "../hooks/useRoundState";
 import { getCase } from "../lib/content";
 import { getSessionToken } from "../lib/session";
-import { rpcBeginQuestion, rpcSubmitAnswer, rpcSubmitCase } from "../lib/rpc";
+import { rpcBeginQuestion, rpcPreviousQuestion, rpcSubmitAnswer, rpcSubmitCase } from "../lib/rpc";
 
 export function Round2() {
   const nav = useNavigate();
@@ -45,7 +45,24 @@ export function Round2() {
     void rpcBeginQuestion(token, qid).then(() => refresh());
   }, [qid, answerRow?.started_at, refresh]);
 
-  useEffect(() => setSelected(null), [qid]);
+  useEffect(() => {
+    setSelected(answerRow?.selected_option ?? null);
+  }, [qid, answerRow?.selected_option]);
+
+  const onPrevious = useCallback(async () => {
+    if (qIdx <= 0) return;
+    const token = getSessionToken();
+    if (!token) return;
+    setSubmitting(true);
+    try {
+      await rpcPreviousQuestion(token, 2);
+      await refresh();
+    } catch {
+      await refresh();
+    } finally {
+      setSubmitting(false);
+    }
+  }, [qIdx, refresh]);
 
   const onNext = useCallback(async () => {
     if (!caseStudy || !qid || !selected || !caseId) return;
@@ -94,6 +111,7 @@ export function Round2() {
           selected={selected}
           onSelect={setSelected}
           onNext={() => void onNext()}
+          onPrevious={() => void onPrevious()}
           submitting={submitting}
         />
       </div>

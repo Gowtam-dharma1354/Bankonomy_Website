@@ -31,7 +31,7 @@ export function LeverageSelect({ caseStudy, onChosen }: Props) {
   return (
     <div className="leverage-stage no-select">
       <section className="leverage-card">
-        <p className="leverage-kicker">Round 3 · Risk selection</p>
+        <p className="leverage-kicker">Select marking leverage</p>
         <h2>{caseStudy.title}</h2>
         <p className="leverage-summary">{caseStudy.summary ?? "Choose the scoring profile for this case."}</p>
         <div className="leverage-options">

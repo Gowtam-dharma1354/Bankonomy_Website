@@ -12,7 +12,7 @@ export function ViolationBadge({ violations, showFullscreen = true }: Props) {
   return (
     <div className={`violation-badge ${hot ? "violation-hot" : ""}`}>
       <span>Violations: {total}</span>
-      {showFullscreen && violations.fullscreen_exit > 0 && (
+      {showFullscreen && (
         <span className="violation-sub">Fullscreen exits: {violations.fullscreen_exit}</span>
       )}
     </div>

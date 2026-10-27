@@ -17,7 +17,6 @@ export function Welcome() {
       </section>
       <div className="welcome-footer">
         <span>Strategy. Markets. Decisions.</span>
-        <Link to="/admin/login">Admin</Link>
       </div>
     </main>
   );

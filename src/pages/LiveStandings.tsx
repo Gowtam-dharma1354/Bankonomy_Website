@@ -2,6 +2,15 @@ import { useCallback, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { supabase } from "../lib/supabase";
 
+function formatLiveDuration(seconds: number | null) {
+  if (seconds === null) return "—";
+  const total = Math.max(0, Math.floor(seconds));
+  const hours = Math.floor(total / 3600);
+  const minutes = Math.floor((total % 3600) / 60);
+  const remainingSeconds = total % 60;
+  return [hours, minutes, remainingSeconds].map((part) => String(part).padStart(2, "0")).join(":");
+}
+
 type Row = {
   rank: number;
   team_name: string;
@@ -10,6 +19,7 @@ type Row = {
   round2_score: number;
   round3_score: number;
   total_score: number;
+  total_time_taken: number | null;
   disqualified: boolean;
 };
 
@@ -37,7 +47,20 @@ export function LiveStandings() {
       .on("postgres_changes", { event: "*", schema: "public", table: "answers" }, () => void refresh())
       .on("postgres_changes", { event: "*", schema: "public", table: "team_round_state" }, () => void refresh())
       .subscribe();
+
+    const pollId = window.setInterval(() => {
+      if (document.visibilityState === "visible") void refresh();
+    }, 2000);
+    const refreshOnVisible = () => {
+      if (document.visibilityState === "visible") void refresh();
+    };
+    document.addEventListener("visibilitychange", refreshOnVisible);
+    window.addEventListener("focus", refreshOnVisible);
+
     return () => {
+      window.clearInterval(pollId);
+      document.removeEventListener("visibilitychange", refreshOnVisible);
+      window.removeEventListener("focus", refreshOnVisible);
       void supabase.removeChannel(ch);
     };
   }, [refresh]);
@@ -47,7 +70,7 @@ export function LiveStandings() {
       <header className="live-header">
         <div>
           <div className="brand-nism">NISM</div>
-          <div className="brand-club">FINTECH &amp; QUANT CLUB</div>
+          <div className="brand-club">Banking and Economy Club</div>
           <h1 className="brand-event">BANKONOMY — Live</h1>
         </div>
         <label className="hide-toggle">
@@ -67,6 +90,7 @@ export function LiveStandings() {
                 <th>R2</th>
                 <th>R3</th>
                 <th>Total</th>
+                <th>Overall Time</th>
               </>
             )}
             <th>Status</th>
@@ -84,6 +108,7 @@ export function LiveStandings() {
                   <td>{r.round2_score}</td>
                   <td>{r.round3_score}</td>
                   <td>{r.total_score}</td>
+                  <td>{formatLiveDuration(r.total_time_taken)}</td>
                 </>
               )}
               <td>{r.disqualified ? "DQ" : "Active"}</td>

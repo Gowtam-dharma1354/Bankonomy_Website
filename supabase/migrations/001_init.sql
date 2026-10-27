@@ -54,6 +54,7 @@ CREATE TABLE team_round_state (
   current_question_index int NOT NULL DEFAULT 0,
   current_case_index int NOT NULL DEFAULT 0,
   extra_seconds int NOT NULL DEFAULT 0,
+  completed_at timestamptz,
   PRIMARY KEY (team_id, round)
 );
 
@@ -582,7 +583,7 @@ BEGIN
     SELECT jsonb_agg(q ORDER BY random()) INTO v_qorder
     FROM unnest(r1_question_ids()) AS q;
   ELSIF p_round = 2 THEN
-    v_duration := interval '40 minutes';
+    v_duration := interval '30 minutes';
     SELECT jsonb_agg(c ORDER BY random()) INTO v_corder
     FROM unnest(r2_case_ids()) AS c;
   ELSE
@@ -596,6 +597,7 @@ BEGIN
     started_at = now(),
     deadline = now() + v_duration + (v_state.extra_seconds || ' seconds')::interval
       + (v_pause || ' seconds')::interval,
+    completed_at = NULL,
     question_order = COALESCE(v_qorder, question_order),
     case_order = COALESCE(v_corder, case_order),
     current_question_index = 0,
@@ -871,6 +873,46 @@ BEGIN
   PERFORM log_event_internal(v_team_id, 3, 'leverage_chosen', jsonb_build_object('case_id', p_case_id, 'option', p_option));
 
   RETURN jsonb_build_object('case_id', p_case_id, 'option', p_option);
+END;
+$$;
+
+CREATE OR REPLACE FUNCTION public.previous_question(
+  p_token text,
+  p_round int
+)
+RETURNS jsonb
+LANGUAGE plpgsql
+SECURITY DEFINER
+SET search_path = public
+AS $$
+DECLARE
+  v_team_id uuid := verify_team_session(p_token);
+  v_state team_round_state%ROWTYPE;
+BEGIN
+  IF p_round NOT IN (2, 3) THEN
+    RAISE EXCEPTION 'previous_not_allowed';
+  END IF;
+
+  SELECT * INTO v_state
+  FROM team_round_state
+  WHERE team_id = v_team_id AND round = p_round
+  FOR UPDATE;
+
+  IF NOT FOUND THEN
+    RAISE EXCEPTION 'round_state_not_found';
+  END IF;
+  IF v_state.status <> 'in_progress' THEN
+    RAISE EXCEPTION 'round_not_in_progress';
+  END IF;
+  IF v_state.current_question_index <= 0 THEN
+    RETURN get_round_state(p_token);
+  END IF;
+
+  UPDATE team_round_state
+  SET current_question_index = current_question_index - 1
+  WHERE team_id = v_team_id AND round = p_round;
+
+  RETURN get_round_state(p_token);
 END;
 $$;
 
@@ -1201,6 +1243,7 @@ GRANT EXECUTE ON FUNCTION public.begin_question(text, text) TO anon, authenticat
 GRANT EXECUTE ON FUNCTION public.submit_answer(text, text, text) TO anon, authenticated;
 GRANT EXECUTE ON FUNCTION public.submit_case(text, text) TO anon, authenticated;
 GRANT EXECUTE ON FUNCTION public.choose_leverage(text, text, int) TO anon, authenticated;
+GRANT EXECUTE ON FUNCTION public.previous_question(text, int) TO anon, authenticated;
 GRANT EXECUTE ON FUNCTION public.admin_register_team(text, text, jsonb) TO authenticated;
 GRANT EXECUTE ON FUNCTION public.admin_set_round_status(int, text) TO authenticated;
 GRANT EXECUTE ON FUNCTION public.admin_disqualify_team(uuid, boolean) TO authenticated;

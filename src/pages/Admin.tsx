@@ -21,6 +21,7 @@ type OverallRow = {
   round2_score: number;
   round3_score: number;
   total_score: number;
+  total_time_taken: number | null;
   tab_switches: number;
   rank: number;
 };
@@ -211,7 +212,20 @@ export function Admin() {
       .on("postgres_changes", { event: "*", schema: "public", table: "team_round_state" }, () => void refresh())
       .on("postgres_changes", { event: "*", schema: "public", table: "leverage_choices" }, () => void refresh())
       .subscribe();
+
+    const pollId = window.setInterval(() => {
+      if (document.visibilityState === "visible") void refresh();
+    }, 2000);
+    const refreshOnVisible = () => {
+      if (document.visibilityState === "visible") void refresh();
+    };
+    document.addEventListener("visibilitychange", refreshOnVisible);
+    window.addEventListener("focus", refreshOnVisible);
+
     return () => {
+      window.clearInterval(pollId);
+      document.removeEventListener("visibilitychange", refreshOnVisible);
+      window.removeEventListener("focus", refreshOnVisible);
       void supabase.removeChannel(ch);
     };
   }, [refresh]);
@@ -428,6 +442,7 @@ export function Admin() {
                     <th>R2</th>
                     <th>R3</th>
                     <th>Total</th>
+                    <th>Overall Time</th>
                     <th>Tab Switches</th>
                     <th>Status</th>
                     <th>Actions</th>
@@ -443,6 +458,7 @@ export function Admin() {
                       <td>{row.round2_score}</td>
                       <td>{row.round3_score}</td>
                       <td>{row.total_score}</td>
+                      <td>{formatDuration(row.total_time_taken)}</td>
                       <td>{row.tab_switches}</td>
                       <td>{overallStatusLabel(row, [r1, r2, r3])}</td>
                       <td className="actions-cell">

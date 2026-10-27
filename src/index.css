@@ -64,10 +64,10 @@ body {
 .brand-event {
   margin: 0.25rem 0 0;
   font-family: var(--font-mono);
-  color: var(--yellow);
-  background: var(--navy);
+  color: var(--navy);
+  background: transparent;
   display: inline-block;
-  padding: 0.35rem 0.75rem;
+  padding: 0.35rem 0;
   font-size: 1.75rem;
 }
 
@@ -300,8 +300,14 @@ textarea {
 
 .round-page {
   width: min(100%, 1440px);
+  min-height: 100vh;
   margin: 0 auto;
   padding: 1.25rem clamp(1rem, 3vw, 2.5rem);
+  background-color: #edf3ee;
+  background-image:
+    radial-gradient(ellipse at 15% 20%, rgba(80, 137, 104, 0.12), transparent 38%),
+    radial-gradient(ellipse at 85% 80%, rgba(219, 183, 85, 0.12), transparent 36%),
+    repeating-linear-gradient(135deg, rgba(15, 39, 68, 0.025) 0 1px, transparent 1px 18px);
 }
 
 .player-transition-page {
@@ -321,11 +327,12 @@ textarea {
 }
 
 .player-transition-eyebrow {
-  margin: 0 0 1.25rem;
+  margin: 0 0 0.75rem;
   color: var(--yellow);
   font-family: var(--font-mono);
-  font-size: 1rem;
-  font-weight: 700;
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  font-weight: 800;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
 }
 
@@ -339,10 +346,11 @@ textarea {
 }
 
 .player-transition-team {
-  margin: 1.5rem 0 0;
-  color: #d3dcda;
-  font-size: 1.2rem;
-  font-weight: 700;
+  margin: 1.75rem 0 0;
+  color: #ffffff;
+  font-size: clamp(1.75rem, 4vw, 3rem);
+  font-weight: 800;
+  line-height: 1.1;
 }
 
 .player-transition-message {
@@ -461,6 +469,12 @@ textarea {
   padding: 0;
   background: transparent;
   color: inherit;
+  font-size: 1.15rem;
+  font-weight: 800;
+}
+
+.round-violation-card .violation-sub {
+  margin-top: 0.35rem;
   font-size: 1rem;
   font-weight: 700;
 }
@@ -588,6 +602,21 @@ textarea {
   padding: 1rem;
 }
 
+.case-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+.case-actions .case-previous {
+  min-width: 7rem;
+}
+
+.case-actions .case-next {
+  min-width: 9rem;
+}
+
 .violation-badge {
   font-size: 0.85rem;
   padding: 0.25rem 0.5rem;
@@ -623,11 +652,12 @@ textarea {
 }
 
 .leverage-kicker {
-  margin: 0 0 0.6rem;
+  margin: 0 0 0.8rem;
   color: #537365;
   font-family: var(--font-mono);
-  font-size: 0.8rem;
-  font-weight: 700;
+  font-size: 1.35rem;
+  font-weight: 800;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -856,7 +886,7 @@ textarea {
 
 .brand-event {
   margin-top: 0.5rem;
-  padding: 0.45rem 0.85rem;
+  padding: 0.45rem 0;
   font-size: 2.35rem;
 }
 

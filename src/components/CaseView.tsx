@@ -7,10 +7,11 @@ type Props = {
   selected: string | null;
   onSelect: (id: string) => void;
   onNext: () => void;
+  onPrevious?: () => void;
   submitting?: boolean;
 };
 
-export function CaseView({ caseStudy, questionIndex, selected, onSelect, onNext, submitting }: Props) {
+export function CaseView({ caseStudy, questionIndex, selected, onSelect, onNext, onPrevious, submitting }: Props) {
   const q = caseStudy.questions[questionIndex];
   const isLast = questionIndex === caseStudy.questions.length - 1;
 
@@ -27,14 +28,26 @@ export function CaseView({ caseStudy, questionIndex, selected, onSelect, onNext,
         {q && (
           <QuestionCard question={q} selected={selected} onSelect={onSelect} disabled={submitting} />
         )}
-        <button
-          type="button"
-          className="btn btn-primary"
-          disabled={!selected || submitting}
-          onClick={onNext}
-        >
-          {isLast ? "Submit Case" : "Next"}
-        </button>
+        <div className="case-actions">
+          {questionIndex > 0 && onPrevious && (
+            <button
+              type="button"
+              className="btn btn-ghost case-previous"
+              disabled={submitting}
+              onClick={onPrevious}
+            >
+              Previous
+            </button>
+          )}
+          <button
+            type="button"
+            className="btn btn-primary case-next"
+            disabled={!selected || submitting}
+            onClick={onNext}
+          >
+            {isLast ? "Submit Case" : "Next"}
+          </button>
+        </div>
       </section>
     </div>
   );
