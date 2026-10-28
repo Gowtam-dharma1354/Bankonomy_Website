@@ -1,375 +1,377 @@
 [
   {
     "id": "r1-q01",
-    "question": "[PLACEHOLDER] Round 1 Question 1 — paste real question text here",
+    "question": "Designed in 1971 by Shekhar Kamat of the National Institute of Design (NID), this iconic blue mark is popularly—though apocryphally—rumoured to mirror the aerial contour of Ahmedabad's Kankaria Lake . Which Indian banking giant adopted this minimalist emblem to project security and approachability across the nation?",
+    "image": "/images/round1-question-01.jpg",
     "options": [
       {
         "id": "A",
-        "text": "[PLACEHOLDER] Option A — replace with real text"
+        "text": "Bank of Baroda"
       },
       {
         "id": "B",
-        "text": "[PLACEHOLDER] Option B — replace with real text"
+        "text": "Punjab National Bank "
       },
       {
         "id": "C",
-        "text": "[PLACEHOLDER] Option C — replace with real text"
+        "text": "State Bank of India"
       },
       {
         "id": "D",
-        "text": "[PLACEHOLDER] Option D — replace with real text"
+        "text": "Canara Bank "
       }
     ]
   },
   {
     "id": "r1-q02",
-    "question": "[PLACEHOLDER] Round 1 Question 2 — paste real question text here",
+    "question": "Maytas Infra was an infrastructure development, construction and project management company. In 2008 there were attempts from its parent company to merge the company to its parent firm, which they later had to abandon because of the shareholder disapproval. The parent company was eventually taken over by Mahindra Group. Identify the parent company of Maytas Infra?",
     "options": [
       {
         "id": "A",
-        "text": "[PLACEHOLDER] Option A — replace with real text"
+        "text": "Videocon"
       },
       {
         "id": "B",
-        "text": "[PLACEHOLDER] Option B — replace with real text"
+        "text": "Lehmann Brothers"
       },
       {
         "id": "C",
-        "text": "[PLACEHOLDER] Option C — replace with real text"
+        "text": "Big Bazar"
       },
       {
         "id": "D",
-        "text": "[PLACEHOLDER] Option D — replace with real text"
+        "text": "Satyam Computer Services "
       }
     ]
   },
   {
     "id": "r1-q03",
-    "question": "[PLACEHOLDER] Round 1 Question 3 — paste real question text here",
+    "question": "Formerly a division of a famous Indian IT maintenance firm formed after IBM's 1970s exit, which publicly listed market leader dominates India's ATM cash management and retail cash logistics sector?",
     "options": [
       {
         "id": "A",
-        "text": "[PLACEHOLDER] Option A — replace with real text"
+        "text": "CMS Info Systems  "
       },
       {
         "id": "B",
-        "text": "[PLACEHOLDER] Option B — replace with real text"
+        "text": "AGS Transact Technologies "
       },
       {
         "id": "C",
-        "text": "[PLACEHOLDER] Option C — replace with real text"
+        "text": "Vacuum & Armored Logistics India"
       },
       {
         "id": "D",
-        "text": "[PLACEHOLDER] Option D — replace with real text"
+        "text": "Route Mobile Limited"
       }
     ]
   },
   {
     "id": "r1-q04",
-    "question": "[PLACEHOLDER] Round 1 Question 4 — paste real question text here",
+    "question": "Bill Ackman, the founder of Pershing Square Capital Management, made headlines by launching a massive $1 billion short position against a nutritional supplement company in 2012, publicly calling it a 'pyramid scheme' before ultimately losing hundreds of millions as the stock rallied. Identify the company.",
     "options": [
       {
         "id": "A",
-        "text": "[PLACEHOLDER] Option A — replace with real text"
+        "text": "Herbalife"
       },
       {
         "id": "B",
-        "text": "[PLACEHOLDER] Option B — replace with real text"
+        "text": "Amway"
       },
       {
         "id": "C",
-        "text": "[PLACEHOLDER] Option C — replace with real text"
+        "text": "Cipla"
       },
       {
         "id": "D",
-        "text": "[PLACEHOLDER] Option D — replace with real text"
+        "text": "Novo Nordisk"
       }
     ]
   },
   {
     "id": "r1-q05",
-    "question": "[PLACEHOLDER] Round 1 Question 5 — paste real question text here",
+    "question": "Which of the following RBI governors was a Kenyan citizen who was awarded Indian citizenship just months before beginning his stint at the RBI in 2013?",
     "options": [
       {
         "id": "A",
-        "text": "[PLACEHOLDER] Option A — replace with real text"
+        "text": "Michael Patra"
       },
       {
         "id": "B",
-        "text": "[PLACEHOLDER] Option B — replace with real text"
+        "text": "Raghuram Rajan"
       },
       {
         "id": "C",
-        "text": "[PLACEHOLDER] Option C — replace with real text"
+        "text": "Kash Patel"
       },
       {
         "id": "D",
-        "text": "[PLACEHOLDER] Option D — replace with real text"
+        "text": "Urjit Patel"
       }
     ]
   },
   {
     "id": "r1-q06",
-    "question": "[PLACEHOLDER] Round 1 Question 6 — paste real question text here",
+    "question": "Inspired by watching a self-service chocolate bar vending machine after missing Saturday banking hours, Scottish-born inventor John Shepherd-Barron devised a machine that accepted paper cheques impregnated with mildly radioactive Carbon-14 and dispensed £10 notes. On June 27, 1967, television sitcom actor Reg Varney became the first person to withdraw cash from this pioneering \"hole in the wall\" in Enfield, North London. Which British bank commissioned and installed this world-first automated cash dispenser?",
     "options": [
       {
         "id": "A",
-        "text": "[PLACEHOLDER] Option A — replace with real text"
+        "text": "Lloyds Bank"
       },
       {
         "id": "B",
-        "text": "[PLACEHOLDER] Option B — replace with real text"
+        "text": "NatWest"
       },
       {
         "id": "C",
-        "text": "[PLACEHOLDER] Option C — replace with real text"
+        "text": "Royal Bank of Britain"
       },
       {
         "id": "D",
-        "text": "[PLACEHOLDER] Option D — replace with real text"
+        "text": "Barclays Bank"
       }
     ]
   },
   {
     "id": "r1-q07",
-    "question": "[PLACEHOLDER] Round 1 Question 7 — paste real question text here",
+    "question": "According to one of financial history's most celebrated origin stories, businessman Frank McNamara was dining with clients at Major's Cabin Grill in New York City in 1949 when he realized he had left his wallet in another suit. After his wife had to drive into Manhattan to settle the tab, McNamara returned to the same restaurant in February 1950 with his partner Ralph Schneider and paid the bill using a small cardboard rectangle—an event known in industry lore as the \"First Supper.\" Which pioneering financial brand was thus launched?",
     "options": [
       {
         "id": "A",
-        "text": "[PLACEHOLDER] Option A — replace with real text"
+        "text": "Amex Diners Card"
       },
       {
         "id": "B",
-        "text": "[PLACEHOLDER] Option B — replace with real text"
+        "text": "Diners Club International"
       },
       {
         "id": "C",
-        "text": "[PLACEHOLDER] Option C — replace with real text"
+        "text": "Carte Blanche"
       },
       {
         "id": "D",
-        "text": "[PLACEHOLDER] Option D — replace with real text"
+        "text": "Michelin Card"
       }
     ]
   },
   {
     "id": "r1-q08",
-    "question": "[PLACEHOLDER] Round 1 Question 8 — paste real question text here",
+    "question": "Designed after the 2008 global financial crisis as \"contingent convertible\" (CoCo) instruments, these perpetual debt securities sit below Senior and Tier 2 debt to absorb losses if a lender's capital ratio falls below a trigger point or regulators deem the bank non-viable. In March 2023, bondholders worldwide were stunned when Swiss regulator FINMA ordered roughly 16 billion CHF ($17 billion) of these instruments written down to zero even while equity shareholders received a modest payout. Which class of bank capital bonds became the flashpoint of the Credit Suisse rescue?",
     "options": [
       {
         "id": "A",
-        "text": "[PLACEHOLDER] Option A — replace with real text"
+        "text": "Additional Tier 1 (AT1) Bonds"
       },
       {
         "id": "B",
-        "text": "[PLACEHOLDER] Option B — replace with real text"
+        "text": "Covered Bail-in Notes (CBNs)"
       },
       {
         "id": "C",
-        "text": "[PLACEHOLDER] Option C — replace with real text"
+        "text": "Sovereign Liquidity Buffer Bonds (SLBBs)"
       },
       {
         "id": "D",
-        "text": "[PLACEHOLDER] Option D — replace with real text"
+        "text": "Subordinated Tier 3 Debentures"
       }
     ]
   },
   {
     "id": "r1-q09",
-    "question": "[PLACEHOLDER] Round 1 Question 9 — paste real question text here",
+    "question": "Rising 155 metres above the Taunusanlage financial district in Frankfurt—a skyline often nicknamed \"Mainhattan\"—the twin asymmetrical skyscrapers serving as Deutsche Bank's global headquarters underwent a celebrated green renovation in 2011. However, ever since the towers were completed in 1984, local bankers and residents have affectionately referred to the duo by a sharp, two-word accounting nickname. What are the two towers popularly called in German (and English)?",
     "options": [
       {
         "id": "A",
-        "text": "[PLACEHOLDER] Option A — replace with real text"
+        "text": "Soll und Haben (Debit and Credit)"
       },
       {
         "id": "B",
-        "text": "[PLACEHOLDER] Option B — replace with real text"
+        "text": "Gewinn und Verlust (Profit and Loss)"
       },
       {
         "id": "C",
-        "text": "[PLACEHOLDER] Option C — replace with real text"
+        "text": "Bull und Bär (Bull and Bear)"
       },
       {
         "id": "D",
-        "text": "[PLACEHOLDER] Option D — replace with real text"
+        "text": "Zins und Tilgung (Interest and Principal)"
       }
     ]
   },
   {
     "id": "r1-q10",
-    "question": "[PLACEHOLDER] Round 1 Question 10 — paste real question text here",
+    "question": "Which of our neighboring countries keep their local currencies strictly locked to the Indian Rupee, essentially treating the RBI like a currency bodyguard?",
     "options": [
       {
         "id": "A",
-        "text": "[PLACEHOLDER] Option A — replace with real text"
+        "text": "Maldives and Tibet"
       },
       {
         "id": "B",
-        "text": "[PLACEHOLDER] Option B — replace with real text"
+        "text": "Bhutan and Nepal"
       },
       {
         "id": "C",
-        "text": "[PLACEHOLDER] Option C — replace with real text"
+        "text": "Sri Lanka and Nepal"
       },
       {
         "id": "D",
-        "text": "[PLACEHOLDER] Option D — replace with real text"
+        "text": "Myanmar and Bhutan"
       }
     ]
   },
   {
     "id": "r1-q11",
-    "question": "[PLACEHOLDER] Round 1 Question 11 — paste real question text here",
+    "question": "In finance and risk management, what term is used to describe the trimming of the value of collateral or assets to account for potential losses or market risk?",
     "options": [
       {
         "id": "A",
-        "text": "[PLACEHOLDER] Option A — replace with real text"
+        "text": "Haircut"
       },
       {
         "id": "B",
-        "text": "[PLACEHOLDER] Option B — replace with real text"
+        "text": "Shave"
       },
       {
         "id": "C",
-        "text": "[PLACEHOLDER] Option C — replace with real text"
+        "text": "Thread"
       },
       {
         "id": "D",
-        "text": "[PLACEHOLDER] Option D — replace with real text"
+        "text": "Mullet"
       }
     ]
   },
   {
     "id": "r1-q12",
-    "question": "[PLACEHOLDER] Round 1 Question 12 — paste real question text here",
+    "question": "The 2016 book by Tamal Bandyopadhyay features the story of the formation of a bank set up in Kolkata and its founder, Chandra Shekhar Ghosh, which bonded the relationship between people and banking. Established in 2001 as a not-for-profit entity with the objective of financial inclusion and women empowerment, it went on to receive a full banking license in 2015. Which bank is this?",
     "options": [
       {
         "id": "A",
-        "text": "[PLACEHOLDER] Option A — replace with real text"
+        "text": "RBL Bank"
       },
       {
         "id": "B",
-        "text": "[PLACEHOLDER] Option B — replace with real text"
+        "text": "Bandhan Bank"
       },
       {
         "id": "C",
-        "text": "[PLACEHOLDER] Option C — replace with real text"
+        "text": "Equitas Small Finance Bank"
       },
       {
         "id": "D",
-        "text": "[PLACEHOLDER] Option D — replace with real text"
+        "text": "DCB Bank"
       }
     ]
   },
   {
     "id": "r1-q13",
-    "question": "[PLACEHOLDER] Round 1 Question 13 — paste real question text here",
+    "question": "__________ (4,3) is a 2022 non-fiction book written by the American economic historian Chris Miller. It tells about the transformation of a technology into an essential component of contemporary life in the background of geopolitical battles. The book received the 2022 Financial Times Business Book of the Year award. What is the title of the book?",
+    "image": "/images/round1-question-14.jpeg",
     "options": [
       {
         "id": "A",
-        "text": "[PLACEHOLDER] Option A — replace with real text"
+        "text": "Semi War"
       },
       {
         "id": "B",
-        "text": "[PLACEHOLDER] Option B — replace with real text"
+        "text": "The A I War"
       },
       {
         "id": "C",
-        "text": "[PLACEHOLDER] Option C — replace with real text"
+        "text": "Vaccine War"
       },
       {
         "id": "D",
-        "text": "[PLACEHOLDER] Option D — replace with real text"
+        "text": "Chip War"
       }
     ]
   },
   {
     "id": "r1-q14",
-    "question": "[PLACEHOLDER] Round 1 Question 14 — paste real question text here",
+    "question": "What slang term for US dollars originated on the American frontier in the 18th century, back when traders literally used animal skins—specifically the hides of male deer—as a form of currency before paper money became standard?",
     "options": [
       {
         "id": "A",
-        "text": "[PLACEHOLDER] Option A — replace with real text"
+        "text": "Money"
       },
       {
         "id": "B",
-        "text": "[PLACEHOLDER] Option B — replace with real text"
+        "text": "Penny"
       },
       {
         "id": "C",
-        "text": "[PLACEHOLDER] Option C — replace with real text"
+        "text": "Bucks"
       },
       {
         "id": "D",
-        "text": "[PLACEHOLDER] Option D — replace with real text"
+        "text": "Grand"
       }
     ]
   },
   {
     "id": "r1-q15",
-    "question": "[PLACEHOLDER] Round 1 Question 15 — paste real question text here",
+    "question": "When medieval and Renaissance Italian moneychangers in cities like Florence, Genoa, and Venice conducted foreign exchange and credit transactions in open marketplaces, they spread their coins atop a wooden bench or counter called a banca. According to widely cited commercial etymology, if a dealer became insolvent and could no longer honour his obligations, officials or fellow merchants would ceremonially smash his trading bench into pieces. Which ubiquitous modern legal and financial word descends directly from this \"broken bench\"?",
     "options": [
       {
         "id": "A",
-        "text": "[PLACEHOLDER] Option A — replace with real text"
+        "text": "Bankrupt"
       },
       {
         "id": "B",
-        "text": "[PLACEHOLDER] Option B — replace with real text"
+        "text": "Destitute"
       },
       {
         "id": "C",
-        "text": "[PLACEHOLDER] Option C — replace with real text"
+        "text": "Insolvent"
       },
       {
         "id": "D",
-        "text": "[PLACEHOLDER] Option D — replace with real text"
+        "text": "Pauper"
       }
     ]
   },
   {
     "id": "r1-q16",
-    "question": "[PLACEHOLDER] Round 1 Question 16 — paste real question text here",
+    "question": "Which economic indicator suggests that sales of affordable luxuries—such as cosmetics—tend to rise during economic downturns as consumers substitute major splurges for smaller indulgences?",
     "options": [
       {
         "id": "A",
-        "text": "[PLACEHOLDER] Option A — replace with real text"
+        "text": "The Lip Gloss Index"
       },
       {
         "id": "B",
-        "text": "[PLACEHOLDER] Option B — replace with real text"
+        "text": "The Lipstick Index"
       },
       {
         "id": "C",
-        "text": "[PLACEHOLDER] Option C — replace with real text"
+        "text": "The Maybelline Index"
       },
       {
         "id": "D",
-        "text": "[PLACEHOLDER] Option D — replace with real text"
+        "text": "The Makeup Index"
       }
     ]
   },
   {
     "id": "r1-q17",
-    "question": "[PLACEHOLDER] Round 1 Question 17 — paste real question text here",
+    "question": "In the context of venture capital, private equity, and hedge funds, what term describes the vast pools of committed but uninvested capital that institutional investors (like pension funds and endowments) have pledged to private fund managers, waiting to be deployed when attractive asset valuations or market downturns emerge?",
     "options": [
       {
         "id": "A",
-        "text": "[PLACEHOLDER] Option A — replace with real text"
+        "text": "Liquid reserves"
       },
       {
         "id": "B",
-        "text": "[PLACEHOLDER] Option B — replace with real text"
+        "text": "Dry powder"
       },
       {
         "id": "C",
-        "text": "[PLACEHOLDER] Option C — replace with real text"
+        "text": "Encumbered capital"
       },
       {
         "id": "D",
-        "text": "[PLACEHOLDER] Option D — replace with real text"
+        "text": "Mezzanine float"
       }
     ]
   }

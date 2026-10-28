@@ -2,26 +2,27 @@ import type { Round1Question } from "../types";
 
 const q: Round1Question = {
   id: "r1-q13",
-  question: "[PLACEHOLDER] Round 1 Question 13 — paste real question text here",
+  question: "__________ (4,3) is a 2022 non-fiction book written by the American economic historian Chris Miller. It tells about the transformation of a technology into an essential component of contemporary life in the background of geopolitical battles. The book received the 2022 Financial Times Business Book of the Year award. What is the title of the book?",
+  image: "/images/round1-question-14.jpeg",
   options: [
   {
     "id": "A",
-    "text": "[PLACEHOLDER] Option A — replace with real text"
+    "text": "Semi War"
   },
   {
     "id": "B",
-    "text": "[PLACEHOLDER] Option B — replace with real text"
+    "text": "The A I War"
   },
   {
     "id": "C",
-    "text": "[PLACEHOLDER] Option C — replace with real text"
+    "text": "Vaccine War"
   },
   {
     "id": "D",
-    "text": "[PLACEHOLDER] Option D — replace with real text"
+    "text": "Chip War"
   }
 ],
-  correctOption: "A",
+  correctOption: "D",
 };
 
 export default q;

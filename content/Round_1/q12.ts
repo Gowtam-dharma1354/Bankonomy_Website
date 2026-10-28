@@ -2,26 +2,26 @@ import type { Round1Question } from "../types";
 
 const q: Round1Question = {
   id: "r1-q12",
-  question: "[PLACEHOLDER] Round 1 Question 12 — paste real question text here",
+  question: "The 2016 book by Tamal Bandyopadhyay features the story of the formation of a bank set up in Kolkata and its founder, Chandra Shekhar Ghosh, which bonded the relationship between people and banking. Established in 2001 as a not-for-profit entity with the objective of financial inclusion and women empowerment, it went on to receive a full banking license in 2015. Which bank is this?",
   options: [
   {
     "id": "A",
-    "text": "[PLACEHOLDER] Option A — replace with real text"
+    "text": "RBL Bank"
   },
   {
     "id": "B",
-    "text": "[PLACEHOLDER] Option B — replace with real text"
+    "text": "Bandhan Bank"
   },
   {
     "id": "C",
-    "text": "[PLACEHOLDER] Option C — replace with real text"
+    "text": "Equitas Small Finance Bank"
   },
   {
     "id": "D",
-    "text": "[PLACEHOLDER] Option D — replace with real text"
+    "text": "DCB Bank"
   }
 ],
-  correctOption: "A",
+  correctOption: "B",
 };
 
 export default q;

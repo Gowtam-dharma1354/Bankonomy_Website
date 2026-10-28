@@ -1,95 +1,94 @@
 [
   {
     "id": "r2-case1",
-    "title": "[PLACEHOLDER] Case 1 Title",
-    "caseText": "[PLACEHOLDER] Long case study text for Round 2 Case 1. Paste the full narrative here.",
-    "summary": "[PLACEHOLDER] Optional summary — Case 1",
+    "title": "Vardhan Precision Forgings Ltd.",
+    "caseText": "Company background: Vardhan Precision Forgings Ltd. (VPFL) manufactures specialized steel components for commercial vehicles and railways. Over the last three years, annual revenue grew steadily by 14% to reach ₹620 crore, supported by consistent operating cash flows and a stable EBITDA margin of 16%. VPFL currently maintains low leverage, with a Debt-to-EBITDA ratio of 1.6x and an Interest Coverage Ratio (ICR) of 4.2x.\n\nVPFL is requesting a 6-year term loan of ₹120 crore to set up an automated forging line in Pune, pledging the new plant and machinery as primary collateral alongside a 25% promoter equity contribution. While domestic railway demand remains strong, a single European automotive client accounts for 35% of total revenue. Recently, VPFL’s illustrative stock price fell by 18% after market analysts flagged rising energy costs in Europe; however, stock-price performance is contextual market evidence and not a substitute for fundamental credit analysis. Additionally, alloy steel input prices have become volatile, and the European client is currently renegotiating its three-year supply contract, requesting a 60-day extension in credit terms without a fixed minimum off-take guarantee.",
     "questions": [
       {
         "id": "r2-c1-q1",
-        "question": "[PLACEHOLDER] Round 2 Case 1 Question 1",
+        "question": "Based on the credit profile and business outlook provided, what is the most prudent lending decision for the bank regarding VPFL’s ₹120 crore loan request?",
         "options": [
           {
             "id": "A",
-            "text": "[PLACEHOLDER] Option A — replace with real text"
+            "text": "Sanction the full ₹120 crore loan with standard covenants, as the company’s strong historical operating cash flows and 25% equity contribution provide adequate cushion against client concentration."
           },
           {
             "id": "B",
-            "text": "[PLACEHOLDER] Option B — replace with real text"
+            "text": "Reject the loan proposal immediately, because the 18% decline in the company's stock price and European headwinds indicate an imminent deterioration in core solvency."
           },
           {
             "id": "C",
-            "text": "[PLACEHOLDER] Option C — replace with real text"
+            "text": "Sanction the loan subject to specific risk-mitigating conditions, including raw material price pass-through verification and tighter working capital covenants to manage extended receivables."
           },
           {
             "id": "D",
-            "text": "[PLACEHOLDER] Option D — replace with real text"
+            "text": "Defer the loan decision until the company replaces its European client with domestic railway contracts to eliminate foreign revenue exposure completely."
           }
         ]
       },
       {
         "id": "r2-c1-q2",
-        "question": "[PLACEHOLDER] Round 2 Case 1 Question 2",
+        "question": "Which factor represents the most material threat to VPFL’s debt service coverage over the tenure of the proposed term loan?",
         "options": [
           {
             "id": "A",
-            "text": "[PLACEHOLDER] Option A — replace with real text"
+            "text": "The existing Debt-to-EBITDA ratio of 1.6x, which leaves no headroom for capital expenditure borrowing."
           },
           {
             "id": "B",
-            "text": "[PLACEHOLDER] Option B — replace with real text"
+            "text": "Potential compression in operating cash flows from simultaneous raw material cost volatility and elongated receivable cycles from its largest customer."
           },
           {
             "id": "C",
-            "text": "[PLACEHOLDER] Option C — replace with real text"
+            "text": "The recent 18% correction in the company’s equity market valuation, which directly reduces the liquidation value of the proposed plant and machinery collateral."
           },
           {
             "id": "D",
-            "text": "[PLACEHOLDER] Option D — replace with real text"
+            "text": "The dependence on the domestic railway sector, which typically offers lower operating margins than export markets."
           }
         ]
       },
       {
         "id": "r2-c1-q3",
-        "question": "[PLACEHOLDER] Round 2 Case 1 Question 3",
+        "question": "Why does the 18% drop in VPFL’s illustrative stock price have limited standalone weight in determining whether the bank should reject the credit facility?",
         "options": [
           {
             "id": "A",
-            "text": "[PLACEHOLDER] Option A — replace with real text"
+            "text": "Equity market movements often reflect short-term investor sentiment regarding growth expectations, whereas credit appraisal focuses on downside cash-flow stability and debt servicing ability."
           },
           {
             "id": "B",
-            "text": "[PLACEHOLDER] Option B — replace with real text"
+            "text": "Stock prices only affect a company's ability to raise working capital from commercial banks, having no bearing on long-term project finance loans."
           },
           {
             "id": "C",
-            "text": "[PLACEHOLDER] Option C — replace with real text"
+            "text": "The Reserve Bank of India prohibits commercial banks from reviewing capital market indicators when appraising secured manufacturing term loans."
           },
           {
             "id": "D",
-            "text": "[PLACEHOLDER] Option D — replace with real text"
+            "text": "A declining stock price improves the borrower's creditworthiness because management becomes less likely to distribute cash flows as dividends to shareholders."
           }
         ]
       },
       {
         "id": "r2-c1-q4",
-        "question": "[PLACEHOLDER] Round 2 Case 1 Question 4",
+        "question": "Assume that before disbursement, the European client cancels its contract entirely, and VPFL decides to fund the entire ₹120 crore expansion through debt by withdrawing its 25% promoter equity contribution. How should the bank revise its stance?",
         "options": [
           {
             "id": "A",
-            "text": "[PLACEHOLDER] Option A — replace with real text"
+            "text": "Proceed with the sanction by increasing the interest rate by 150 basis points to compensate for the higher leverage and loss of revenue visibility."
           },
           {
             "id": "B",
-            "text": "[PLACEHOLDER] Option B — replace with real text"
+            "text": "Defer or reject the current proposal, as the simultaneous loss of 35% revenue visibility and removal of promoter skin-in-the-game fundamentally alters project viability and leverage."
           },
           {
             "id": "C",
-            "text": "[PLACEHOLDER] Option C — replace with real text"
+            "text": "Sanction the full amount provided the promoters pledge their unencumbered listed shares to cover the 25% equity shortfall."
           },
           {
             "id": "D",
-            "text": "[PLACEHOLDER] Option D — replace with real text"
+            "text": "Approve 65% of the loan amount immediately without requiring promoter equity, scaling the debt down proportionally to the remaining domestic revenue share."
           }
         ]
       }
@@ -97,95 +96,94 @@
   },
   {
     "id": "r2-case2",
-    "title": "[PLACEHOLDER] Case 2 Title",
-    "caseText": "[PLACEHOLDER] Long case study text for Round 2 Case 2. Paste the full narrative here.",
-    "summary": "[PLACEHOLDER] Optional summary — Case 2",
+    "title": "QuantEdge Broking & Algo-Tech Ltd.",
+    "caseText": "Company background: QuantEdge Broking & Algo-Tech Ltd. is a listed fintech firm providing low-latency algorithmic execution platforms to retail discount brokers and proprietary trading desks. Driven by a surge in derivatives trading volumes, its revenue doubled over two years to ₹280 crore, with a healthy EBITDA margin of 28% and minimal long-term debt of ₹15 crore. QuantEdge seeks an ₹85 crore 4-year facility to upgrade its co-location server infrastructure and meet increased working capital margin requirements at clearing corporations.\n\nAs security, the company offers a charge on its software intellectual property (IP) and office furniture, plus a personal guarantee from the founders. However, 65% of QuantEdge’s revenue comes from just three retail discount brokerages. Furthermore, the market regulator has released a consultation paper proposing stricter position limits and higher lot sizes on index options to curb speculative retail trading. QuantEdge’s illustrative stock valuation trades at a high price-to-earnings multiple, though equity optimism does not mitigate cash-flow volatility. Operating cash flows fluctuate sharply from quarter to quarter depending on market turnover, and one major brokerage client is already building an in-house execution engine.",
     "questions": [
       {
         "id": "r2-c2-q1",
-        "question": "[PLACEHOLDER] Round 2 Case 2 Question 1",
+        "question": "What is the primary credit weakness in QuantEdge’s proposal that prevents the bank from treating its 28% EBITDA margin and low debt as sufficient grounds for an unconditional sanction?",
         "options": [
           {
             "id": "A",
-            "text": "[PLACEHOLDER] Option A — replace with real text"
+            "text": "The high price-to-earnings multiple in the stock market, which indicates that the company’s financial statements are likely overstated."
           },
           {
             "id": "B",
-            "text": "[PLACEHOLDER] Option B — replace with real text"
+            "text": "The mismatch between a 4-year loan tenure and server hardware, which normally has a productive lifespan exceeding 15 years."
           },
           {
             "id": "C",
-            "text": "[PLACEHOLDER] Option C — replace with real text"
+            "text": "The company’s refusal to utilize equity capital markets for working capital despite trading at a favorable valuation."
           },
           {
             "id": "D",
-            "text": "[PLACEHOLDER] Option D — replace with real text"
+            "text": "High earnings sensitivity to regulatory tightening in derivatives volumes, compounded by severe customer concentration and intangible, hard-to-liquidate collateral."
           }
         ]
       },
       {
         "id": "r2-c2-q2",
-        "question": "[PLACEHOLDER] Round 2 Case 2 Question 2",
+        "question": "How should the credit committee evaluate the collateral package offered by QuantEdge (software IP, office furniture, and founder personal guarantees)?",
         "options": [
           {
             "id": "A",
-            "text": "[PLACEHOLDER] Option A — replace with real text"
+            "text": "As inadequate standalone credit protection, because software IP rapidly loses value if regulatory shifts or client attrition impair the underlying business model."
           },
           {
             "id": "B",
-            "text": "[PLACEHOLDER] Option B — replace with real text"
+            "text": "As robust primary security, since proprietary trading algorithms generate high margins and can be easily auctioned to competing banks in the event of default."
           },
           {
             "id": "C",
-            "text": "[PLACEHOLDER] Option C — replace with real text"
+            "text": "As sufficient to waive cash-flow covenants, provided the founders’ personal net worth is currently tied to their shareholding in QuantEdge."
           },
           {
             "id": "D",
-            "text": "[PLACEHOLDER] Option D — replace with real text"
+            "text": "As unacceptable under banking norms, because commercial banks are only permitted to lend against immovable industrial land and physical inventory."
           }
         ]
       },
       {
         "id": "r2-c2-q3",
-        "question": "[PLACEHOLDER] Round 2 Case 2 Question 3",
+        "question": "Considering the pending regulatory changes and client insourcing risk, what is the most defensible lending decision for the bank?",
         "options": [
           {
             "id": "A",
-            "text": "[PLACEHOLDER] Option A — replace with real text"
+            "text": "Sanction the full ₹85 crore unconditionally to capture a high-growth fintech relationship before competing banks offer lower interest rates."
           },
           {
             "id": "B",
-            "text": "[PLACEHOLDER] Option B — replace with real text"
+            "text": "Sanction a reduced loan amount focused strictly on verifiable hardware capex, backed by a Debt Service Reserve Account (DSRA), cash-sweep covenants, and tangible cash margin collateral."
           },
           {
             "id": "C",
-            "text": "[PLACEHOLDER] Option C — replace with real text"
+            "text": "Reject the proposal solely because service-sector companies with less than ₹500 crore in revenue lack the asset base required for corporate debt."
           },
           {
             "id": "D",
-            "text": "[PLACEHOLDER] Option D — replace with real text"
+            "text": "Defer the decision for three years until the equity market enters a prolonged bear phase to observe how the company performs under stress."
           }
         ]
       },
       {
         "id": "r2-c2-q4",
-        "question": "[PLACEHOLDER] Round 2 Case 2 Question 4",
+        "question": "Suppose the market regulator implements the stricter derivatives norms immediately, causing QuantEdge’s monthly trading turnover to drop by 45%, while its largest client (accounting for 30% of revenue) terminates its contract upon completing its in-house platform. What should the bank do?",
         "options": [
           {
             "id": "A",
-            "text": "[PLACEHOLDER] Option A — replace with real text"
+            "text": "Sanction the ₹85 crore facility immediately, as the company will urgently need liquidity to survive the revenue downturn and develop new products."
           },
           {
             "id": "B",
-            "text": "[PLACEHOLDER] Option B — replace with real text"
+            "text": "Reject the term loan request, as the structural erosion of its core revenue stream and client base compromises primary repayment capacity beyond what covenants can mitigate."
           },
           {
             "id": "C",
-            "text": "[PLACEHOLDER] Option C — replace with real text"
+            "text": "Approve the loan on the condition that QuantEdge pledges its treasury stock as collateral to cover the 45% revenue shortfall."
           },
           {
             "id": "D",
-            "text": "[PLACEHOLDER] Option D — replace with real text"
+            "text": "Convert the ₹85 crore request into an unsecured 10-year project loan to give the company lower monthly repayment obligations during the industry transition."
           }
         ]
       }
@@ -193,95 +191,94 @@
   },
   {
     "id": "r2-case3",
-    "title": "[PLACEHOLDER] Case 3 Title",
-    "caseText": "[PLACEHOLDER] Long case study text for Round 2 Case 3. Paste the full narrative here.",
-    "summary": "[PLACEHOLDER] Optional summary — Case 3",
+    "title": "Dakshin-Path Tollways & Infra Corp.",
+    "caseText": "Adapted real-world scenario – Infrastructure\n\nNote: This case is inspired by real-world credit dynamics in the Indian road infrastructure sector and is not a verbatim reproduction of an actual historical transaction.\n\nCompany background:Dakshin-Path Tollways & Infra Corp. (DPTIC) is an EPC and build-operate-transfer (BOT) road developer with annual revenues of ₹1,450 crore. While its order book stands at a healthy ₹4,200 crore, consolidated debt has risen to ₹2,900 crore, pulling its Interest Coverage Ratio down to 1.25x. DPTIC is requesting a ₹300 crore term loan for equipment purchases and mobilization advances for a newly awarded highway project.\n\nDespite steady construction margins of 13%, operating cash flows have been negative for two consecutive years. Nearly ₹680 crore of DPTIC’s net worth is locked as equity investments and unsecured loans in three operational toll-road subsidiaries (SPVs) where commercial traffic has fallen 30% short of initial projections due to competing state highways. Furthermore, ₹450 crore in receivables is tied up in prolonged arbitration claims with state nodal agencies. The company’s promoters have already pledged 72% of their shareholding to existing lenders. DPTIC offers a subservient charge on current assets and a corporate guarantee from one of its underperforming toll SPVs as security for the ₹300 crore loan.",
     "questions": [
       {
         "id": "r2-c3-q1",
-        "question": "[PLACEHOLDER] Round 2 Case 3 Question 1",
+        "question": "What is the most appropriate decision for the bank regarding DPTIC’s ₹300 crore loan application?",
         "options": [
           {
             "id": "A",
-            "text": "[PLACEHOLDER] Option A — replace with real text"
+            "text": "Sanction the loan in full, as the ₹4,200 crore order book guarantees sufficient future revenue to resolve current liquidity mismatches."
           },
           {
             "id": "B",
-            "text": "[PLACEHOLDER] Option B — replace with real text"
+            "text": "Approve ₹150 crore immediately against the ₹450 crore arbitration claims, treating disputed receivables as cash equivalents."
           },
           {
             "id": "C",
-            "text": "[PLACEHOLDER] Option C — replace with real text"
+            "text": "Sanction the loan subject to the promoters pledging the remaining 28% of their unencumbered equity shares as primary collateral."
           },
           {
             "id": "D",
-            "text": "[PLACEHOLDER] Option D — replace with real text"
+            "text": "Reject the proposal, as the combination of chronically negative operating cash flows, low interest coverage (1.25x), trapped capital in distressed SPVs, and weak security presents unacceptable credit risk."
           }
         ]
       },
       {
         "id": "r2-c3-q2",
-        "question": "[PLACEHOLDER] Round 2 Case 3 Question 2",
+        "question": "In assessing DPTIC’s balance sheet and cash flows, what is the core analytical flaw in relying on its reported net worth and ₹450 crore receivable balance to justify additional lending?",
         "options": [
           {
             "id": "A",
-            "text": "[PLACEHOLDER] Option A — replace with real text"
+            "text": "Accounting net worth and book receivables do not pay interest; when capital is illiquid in underperforming SPVs and disputed claims, real debt-servicing liquidity is severely overstated."
           },
           {
             "id": "B",
-            "text": "[PLACEHOLDER] Option B — replace with real text"
+            "text": "Construction companies are required to write off all state nodal agency receivables within 90 days, making the reported balance legally invalid."
           },
           {
             "id": "C",
-            "text": "[PLACEHOLDER] Option C — replace with real text"
+            "text": "A high order book automatically reduces a company's net worth by increasing its future tax liabilities."
           },
           {
             "id": "D",
-            "text": "[PLACEHOLDER] Option D — replace with real text"
+            "text": "Subservient charges on current assets give the new lender priority over existing consortium banks in liquidating the arbitration claims."
           }
         ]
       },
       {
         "id": "r2-c3-q3",
-        "question": "[PLACEHOLDER] Round 2 Case 3 Question 3",
+        "question": "Why does the corporate guarantee from the operational toll SPV fail to provide meaningful credit enhancement for the proposed ₹300 crore facility?",
         "options": [
           {
             "id": "A",
-            "text": "[PLACEHOLDER] Option A — replace with real text"
+            "text": "Corporate guarantees from subsidiary companies are legally unenforceable under Indian banking and contract law."
           },
           {
             "id": "B",
-            "text": "[PLACEHOLDER] Option B — replace with real text"
+            "text": "Toll Road SPVs collect revenue in cash, which cannot be routed through commercial bank escrow accounts for debt repayment."
           },
           {
             "id": "C",
-            "text": "[PLACEHOLDER] Option C — replace with real text"
+            "text": "An SPV experiencing a 30% traffic shortfall is already struggling to service its own project-level debt, offering negligible residual cash flow to support the parent company's obligations."
           },
           {
             "id": "D",
-            "text": "[PLACEHOLDER] Option D — replace with real text"
+            "text": "The SPV’s guarantee would only become valid after the parent company completes 100% of its ₹4,200 crore order book."
           }
         ]
       },
       {
         "id": "r2-c3-q4",
-        "question": "[PLACEHOLDER] Round 2 Case 3 Question 4",
+        "question": "Assume DPTIC enters a binding agreement with an Infrastructure Investment Trust (InvIT) to sell two of its toll SPVs for ₹950 crore in cash, committed solely to retiring existing debt, and requests the bank to fund only a ₹100 crore ring-fenced project facility backed by an escrow on central government annuity payments. How should the bank respond?",
         "options": [
           {
             "id": "A",
-            "text": "[PLACEHOLDER] Option A — replace with real text"
+            "text": "Maintain the outright rejection, because any company that has experienced negative operating cash flows in the past cannot be lent to for five years."
           },
           {
             "id": "B",
-            "text": "[PLACEHOLDER] Option B — replace with real text"
+            "text": "Defer the decision until the ₹950 crore InvIT sale closes and debt reduction is verified, with a view to sanctioning the ring-fenced ₹100 crore facility once leverage and cash-flow ring-fencing are established."
           },
           {
             "id": "C",
-            "text": "[PLACEHOLDER] Option C — replace with real text"
+            "text": "Sanction the original ₹300 crore loan immediately without waiting for the InvIT transaction to close, relying on the press announcement of the sale."
           },
           {
             "id": "D",
-            "text": "[PLACEHOLDER] Option D — replace with real text"
+            "text": "Reject the ₹100 crore ring-fenced structure because annuity payments from central agencies carry higher traffic risk than state toll roads."
           }
         ]
       }
@@ -289,95 +286,94 @@
   },
   {
     "id": "r2-case4",
-    "title": "[PLACEHOLDER] Case 4 Title",
-    "caseText": "[PLACEHOLDER] Long case study text for Round 2 Case 4. Paste the full narrative here.",
-    "summary": "[PLACEHOLDER] Optional summary — Case 4",
+    "title": "ArogyaSynth API Pharmaceuticals Ltd.",
+    "caseText": "ArogyaSynth API Pharmaceuticals Ltd. manufactures Active Pharmaceutical Ingredients (APIs) for cardiovascular and anti-diabetic drugs, generating ₹880 crore in annual revenue. Two years ago, its EBITDA margin dipped from 20% to 12% due to sudden price spikes in imported chemical Key Starting Materials (KSMs) and higher freight costs. Following backward integration and renegotiated annual supply contracts, margins recovered to 17.5% over the last two quarters. Leverage remains moderate with a Debt-to-EBITDA ratio of 2.3x and an Interest Coverage Ratio of 3.1x.\n\nArogyaSynth seeks a ₹160 crore 5-year term loan to commission a backward-integrated fermentation unit that qualifies under the government’s Production Linked Incentive (PLI) scheme, aiming to reduce imported KSM dependence from 65% to 25%. The company offers a first pari-passu charge on fixed assets (asset coverage ratio of 1.8x). However, the US Food and Drug Administration (USFDA) recently concluded a routine inspection at ArogyaSynth’s flagship plant—which contributes 40% of revenue—and issued three procedural observations regarding laboratory data logging. Management has submitted corrective actions, and final regulatory clearance is expected within 60 days.",
     "questions": [
       {
         "id": "r2-c4-q1",
-        "question": "[PLACEHOLDER] Round 2 Case 4 Question 1",
+        "question": "What is the most commercially and financially sound course of action for the bank regarding ArogyaSynth’s ₹160 crore loan request?",
         "options": [
           {
             "id": "A",
-            "text": "[PLACEHOLDER] Option A — replace with real text"
+            "text": "Sanction and disburse the ₹160 crore loan immediately without conditions, because backward integration under the PLI scheme eliminates all operational and regulatory risks."
           },
           {
             "id": "B",
-            "text": "[PLACEHOLDER] Option B — replace with real text"
+            "text": "Defer final disbursement (or make sanction contingent) until the USFDA inspection observations are satisfactorily resolved, as an adverse escalation at a plant generating 40% of revenue could severely impair repayment capacity."
           },
           {
             "id": "C",
-            "text": "[PLACEHOLDER] Option C — replace with real text"
+            "text": "Reject the proposal permanently, because the historical margin drop from 20% to 12% proves that the pharmaceutical API sector is structurally unprofitable."
           },
           {
             "id": "D",
-            "text": "[PLACEHOLDER] Option D — replace with real text"
+            "text": "Sanction the loan immediately by taking a second charge on imported KSM inventory instead of fixed assets to bypass regulatory uncertainty."
           }
         ]
       },
       {
         "id": "r2-c4-q2",
-        "question": "[PLACEHOLDER] Round 2 Case 4 Question 2",
+        "question": "How should the credit analyst interpret the decline in ArogyaSynth’s EBITDA margin to 12% two years ago and its subsequent recovery to 17.5%?",
         "options": [
           {
             "id": "A",
-            "text": "[PLACEHOLDER] Option A — replace with real text"
+            "text": "It reflects temporary input cost and supply-chain pressure that management is actively addressing through backward integration, rather than permanent business deterioration."
           },
           {
             "id": "B",
-            "text": "[PLACEHOLDER] Option B — replace with real text"
+            "text": "It proves that the company manipulates its accounting depreciation schedules every two years to artificially boost reported margins prior to applying for bank loans."
           },
           {
             "id": "C",
-            "text": "[PLACEHOLDER] Option C — replace with real text"
+            "text": "It indicates that the company’s cardiovascular and anti-diabetic API portfolio has become medically obsolete and faces permanent demand destruction."
           },
           {
             "id": "D",
-            "text": "[PLACEHOLDER] Option D — replace with real text"
+            "text": "It demonstrates that revenue growth in the pharmaceutical industry always causes operating margins to contract due to regulatory compliance costs."
           }
         ]
       },
       {
         "id": "r2-c4-q3",
-        "question": "[PLACEHOLDER] Round 2 Case 4 Question 3",
+        "question": "Why is the resolution of the USFDA observations at the flagship facility critical to the bank’s credit appraisal, even though the proposed ₹160 crore loan is for a new domestic fermentation unit?",
         "options": [
           {
             "id": "A",
-            "text": "[PLACEHOLDER] Option A — replace with real text"
+            "text": "Under Indian banking regulations, a company with any pending foreign regulatory observation is legally barred from operating domestic bank accounts."
           },
           {
             "id": "B",
-            "text": "[PLACEHOLDER] Option B — replace with real text"
+            "text": "During the construction and ramp-up phase of the new unit, the company’s existing operating cash flows—heavily reliant on the flagship plant—must service the interest and existing debt obligations."
           },
           {
             "id": "C",
-            "text": "[PLACEHOLDER] Option C — replace with real text"
+            "text": "The USFDA holds the legal authority to seize the new domestic fermentation equipment if procedural observations at another plant are not resolved within 30 days."
           },
           {
             "id": "D",
-            "text": "[PLACEHOLDER] Option D — replace with real text"
+            "text": "The government’s PLI scheme only reimburses capital expenditure for companies that export 100% of their production to the United States."
           }
         ]
       },
       {
         "id": "r2-c4-q4",
-        "question": "[PLACEHOLDER] Round 2 Case 4 Question 4",
+        "question": "Suppose ArogyaSynth receives an Establishment Inspection Report (EIR) clearing the USFDA observations within 45 days, and subsequently requests loan disbursement. Which covenant structure is most appropriate for sanctioning the ₹160 crore facility?",
         "options": [
           {
             "id": "A",
-            "text": "[PLACEHOLDER] Option A — replace with real text"
+            "text": "Sanction the loan with no financial covenants, since regulatory clearance guarantees that the company will maintain a 20% EBITDA margin indefinitely."
           },
           {
             "id": "B",
-            "text": "[PLACEHOLDER] Option B — replace with real text"
+            "text": "Sanction the loan on the condition that ArogyaSynth halts all exports to regulated markets to avoid future inspection costs."
           },
           {
             "id": "C",
-            "text": "[PLACEHOLDER] Option C — replace with real text"
+            "text": "Sanction only ₹40 crore and require the company to fund the remaining ₹120 crore through short-term 90-day commercial paper rollovers."
           },
           {
             "id": "D",
-            "text": "[PLACEHOLDER] Option D — replace with real text"
+            "text": "Sanction the loan subject to project completion milestones, a cap on total Debt-to-EBITDA at 2.75x, mandatory hedging on unhedged foreign currency exposure, and routing of project cash flows through an escrow/trust and retention account."
           }
         ]
       }

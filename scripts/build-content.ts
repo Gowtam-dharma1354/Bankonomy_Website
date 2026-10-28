@@ -11,7 +11,7 @@ const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const outDir = join(root, "src", "generated");
 
 type PublicOption = McqOption;
-type PublicR1 = { id: string; question: string; options: PublicOption[] };
+type PublicR1 = { id: string; question: string; options: PublicOption[]; image?: string };
 type PublicCaseQ = { id: string; question: string; options: PublicOption[] };
 type PublicR2Case = {
   id: string;

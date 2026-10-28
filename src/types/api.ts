@@ -44,6 +44,7 @@ export type PublicMcq = {
   id: string;
   question: string;
   options: { id: string; text: string }[];
+  image?: string;
 };
 
 export type PublicCase = {

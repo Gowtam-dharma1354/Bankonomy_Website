@@ -2,26 +2,26 @@ import type { Round1Question } from "../types";
 
 const q: Round1Question = {
   id: "r1-q16",
-  question: "[PLACEHOLDER] Round 1 Question 16 — paste real question text here",
+  question: "Which economic indicator suggests that sales of affordable luxuries—such as cosmetics—tend to rise during economic downturns as consumers substitute major splurges for smaller indulgences?",
   options: [
   {
     "id": "A",
-    "text": "[PLACEHOLDER] Option A — replace with real text"
+    "text": "The Lip Gloss Index"
   },
   {
     "id": "B",
-    "text": "[PLACEHOLDER] Option B — replace with real text"
+    "text": "The Lipstick Index"
   },
   {
     "id": "C",
-    "text": "[PLACEHOLDER] Option C — replace with real text"
+    "text": "The Maybelline Index"
   },
   {
     "id": "D",
-    "text": "[PLACEHOLDER] Option D — replace with real text"
+    "text": "The Makeup Index"
   }
 ],
-  correctOption: "A",
+  correctOption: "B",
 };
 
 export default q;

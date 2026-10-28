@@ -2,26 +2,26 @@ import type { Round1Question } from "../types";
 
 const q: Round1Question = {
   id: "r1-q05",
-  question: "[PLACEHOLDER] Round 1 Question 5 — paste real question text here",
+  question: "Which of the following RBI governors was a Kenyan citizen who was awarded Indian citizenship just months before beginning his stint at the RBI in 2013?",
   options: [
   {
     "id": "A",
-    "text": "[PLACEHOLDER] Option A — replace with real text"
+    "text": "Michael Patra"
   },
   {
     "id": "B",
-    "text": "[PLACEHOLDER] Option B — replace with real text"
+    "text": "Raghuram Rajan"
   },
   {
     "id": "C",
-    "text": "[PLACEHOLDER] Option C — replace with real text"
+    "text": "Kash Patel"
   },
   {
     "id": "D",
-    "text": "[PLACEHOLDER] Option D — replace with real text"
+    "text": "Urjit Patel"
   }
 ],
-  correctOption: "A",
+  correctOption: "D",
 };
 
 export default q;

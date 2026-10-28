@@ -2,26 +2,26 @@ import type { Round1Question } from "../types";
 
 const q: Round1Question = {
   id: "r1-q17",
-  question: "[PLACEHOLDER] Round 1 Question 17 — paste real question text here",
+  question: "In the context of venture capital, private equity, and hedge funds, what term describes the vast pools of committed but uninvested capital that institutional investors (like pension funds and endowments) have pledged to private fund managers, waiting to be deployed when attractive asset valuations or market downturns emerge?",
   options: [
   {
     "id": "A",
-    "text": "[PLACEHOLDER] Option A — replace with real text"
+    "text": "Liquid reserves"
   },
   {
     "id": "B",
-    "text": "[PLACEHOLDER] Option B — replace with real text"
+    "text": "Dry powder"
   },
   {
     "id": "C",
-    "text": "[PLACEHOLDER] Option C — replace with real text"
+    "text": "Encumbered capital"
   },
   {
     "id": "D",
-    "text": "[PLACEHOLDER] Option D — replace with real text"
+    "text": "Mezzanine float"
   }
 ],
-  correctOption: "A",
+  correctOption: "B",
 };
 
 export default q;

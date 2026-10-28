@@ -2,26 +2,26 @@ import type { Round1Question } from "../types";
 
 const q: Round1Question = {
   id: "r1-q10",
-  question: "[PLACEHOLDER] Round 1 Question 10 — paste real question text here",
+  question: "Which of our neighboring countries keep their local currencies strictly locked to the Indian Rupee, essentially treating the RBI like a currency bodyguard?",
   options: [
   {
     "id": "A",
-    "text": "[PLACEHOLDER] Option A — replace with real text"
+    "text": "Maldives and Tibet"
   },
   {
     "id": "B",
-    "text": "[PLACEHOLDER] Option B — replace with real text"
+    "text": "Bhutan and Nepal"
   },
   {
     "id": "C",
-    "text": "[PLACEHOLDER] Option C — replace with real text"
+    "text": "Sri Lanka and Nepal"
   },
   {
     "id": "D",
-    "text": "[PLACEHOLDER] Option D — replace with real text"
+    "text": "Myanmar and Bhutan"
   }
 ],
-  correctOption: "A",
+  correctOption: "B",
 };
 
 export default q;

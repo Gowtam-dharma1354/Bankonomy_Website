@@ -5,6 +5,7 @@ export type Round1Question = {
   question: string;
   options: McqOption[];
   correctOption: string;
+  image?: string;
 };
 
 export type CaseQuestion = {
@@ -26,6 +27,6 @@ export type Round3Case = {
   id: string;
   title: string;
   caseText: string;
-  summary: string;
+  summary?: string;
   questions: CaseQuestion[];
 };

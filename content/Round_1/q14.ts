@@ -2,26 +2,26 @@ import type { Round1Question } from "../types";
 
 const q: Round1Question = {
   id: "r1-q14",
-  question: "[PLACEHOLDER] Round 1 Question 14 — paste real question text here",
+  question: "What slang term for US dollars originated on the American frontier in the 18th century, back when traders literally used animal skins—specifically the hides of male deer—as a form of currency before paper money became standard?",
   options: [
   {
     "id": "A",
-    "text": "[PLACEHOLDER] Option A — replace with real text"
+    "text": "Money"
   },
   {
     "id": "B",
-    "text": "[PLACEHOLDER] Option B — replace with real text"
+    "text": "Penny"
   },
   {
     "id": "C",
-    "text": "[PLACEHOLDER] Option C — replace with real text"
+    "text": "Bucks"
   },
   {
     "id": "D",
-    "text": "[PLACEHOLDER] Option D — replace with real text"
+    "text": "Grand"
   }
 ],
-  correctOption: "A",
+  correctOption: "C",
 };
 
 export default q;

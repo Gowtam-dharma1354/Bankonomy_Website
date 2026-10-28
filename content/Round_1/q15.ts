@@ -2,23 +2,23 @@ import type { Round1Question } from "../types";
 
 const q: Round1Question = {
   id: "r1-q15",
-  question: "[PLACEHOLDER] Round 1 Question 15 — paste real question text here",
+  question: "When medieval and Renaissance Italian moneychangers in cities like Florence, Genoa, and Venice conducted foreign exchange and credit transactions in open marketplaces, they spread their coins atop a wooden bench or counter called a banca. According to widely cited commercial etymology, if a dealer became insolvent and could no longer honour his obligations, officials or fellow merchants would ceremonially smash his trading bench into pieces. Which ubiquitous modern legal and financial word descends directly from this \"broken bench\"?",
   options: [
   {
     "id": "A",
-    "text": "[PLACEHOLDER] Option A — replace with real text"
+    "text": "Bankrupt"
   },
   {
     "id": "B",
-    "text": "[PLACEHOLDER] Option B — replace with real text"
+    "text": "Destitute"
   },
   {
     "id": "C",
-    "text": "[PLACEHOLDER] Option C — replace with real text"
+    "text": "Insolvent"
   },
   {
     "id": "D",
-    "text": "[PLACEHOLDER] Option D — replace with real text"
+    "text": "Pauper"
   }
 ],
   correctOption: "A",

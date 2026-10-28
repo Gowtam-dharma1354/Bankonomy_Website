@@ -2,23 +2,23 @@ import type { Round1Question } from "../types";
 
 const q: Round1Question = {
   id: "r1-q11",
-  question: "[PLACEHOLDER] Round 1 Question 11 — paste real question text here",
+  question: "In finance and risk management, what term is used to describe the trimming of the value of collateral or assets to account for potential losses or market risk?",
   options: [
   {
     "id": "A",
-    "text": "[PLACEHOLDER] Option A — replace with real text"
+    "text": "Haircut"
   },
   {
     "id": "B",
-    "text": "[PLACEHOLDER] Option B — replace with real text"
+    "text": "Shave"
   },
   {
     "id": "C",
-    "text": "[PLACEHOLDER] Option C — replace with real text"
+    "text": "Thread"
   },
   {
     "id": "D",
-    "text": "[PLACEHOLDER] Option D — replace with real text"
+    "text": "Mullet"
   }
 ],
   correctOption: "A",

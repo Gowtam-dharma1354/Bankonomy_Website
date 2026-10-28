@@ -59,7 +59,6 @@ async function validateCases(round: 2 | 3, expectedFiles: number) {
     if (!c.id) fail(`${f}: missing case id`);
     if (caseIds.has(c.id)) fail(`duplicate case id ${c.id}`);
     caseIds.add(c.id);
-    if (round === 3 && !c.summary) fail(`${c.id}: Round 3 cases require summary`);
     if (c.questions.length !== 4) fail(`${c.id}: expected 4 questions`);
     for (const q of c.questions) {
       if (questionIds.has(q.id)) fail(`duplicate question id ${q.id}`);

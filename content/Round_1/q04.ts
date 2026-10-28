@@ -2,23 +2,23 @@ import type { Round1Question } from "../types";
 
 const q: Round1Question = {
   id: "r1-q04",
-  question: "[PLACEHOLDER] Round 1 Question 4 — paste real question text here",
+  question: "Bill Ackman, the founder of Pershing Square Capital Management, made headlines by launching a massive $1 billion short position against a nutritional supplement company in 2012, publicly calling it a 'pyramid scheme' before ultimately losing hundreds of millions as the stock rallied. Identify the company.",
   options: [
   {
     "id": "A",
-    "text": "[PLACEHOLDER] Option A — replace with real text"
+    "text": "Herbalife"
   },
   {
     "id": "B",
-    "text": "[PLACEHOLDER] Option B — replace with real text"
+    "text": "Amway"
   },
   {
     "id": "C",
-    "text": "[PLACEHOLDER] Option C — replace with real text"
+    "text": "Cipla"
   },
   {
     "id": "D",
-    "text": "[PLACEHOLDER] Option D — replace with real text"
+    "text": "Novo Nordisk"
   }
 ],
   correctOption: "A",

@@ -2,23 +2,23 @@ import type { Round1Question } from "../types";
 
 const q: Round1Question = {
   id: "r1-q03",
-  question: "[PLACEHOLDER] Round 1 Question 3 — paste real question text here",
+  question: "Formerly a division of a famous Indian IT maintenance firm formed after IBM's 1970s exit, which publicly listed market leader dominates India's ATM cash management and retail cash logistics sector?",
   options: [
   {
     "id": "A",
-    "text": "[PLACEHOLDER] Option A — replace with real text"
+    "text": "CMS Info Systems  "
   },
   {
     "id": "B",
-    "text": "[PLACEHOLDER] Option B — replace with real text"
+    "text": "AGS Transact Technologies "
   },
   {
     "id": "C",
-    "text": "[PLACEHOLDER] Option C — replace with real text"
+    "text": "Vacuum & Armored Logistics India"
   },
   {
     "id": "D",
-    "text": "[PLACEHOLDER] Option D — replace with real text"
+    "text": "Route Mobile Limited"
   }
 ],
   correctOption: "A",

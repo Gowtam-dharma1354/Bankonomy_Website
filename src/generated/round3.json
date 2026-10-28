@@ -1,95 +1,94 @@
 [
   {
     "id": "r3-case1",
-    "title": "[PLACEHOLDER] Case 1 Title",
-    "caseText": "[PLACEHOLDER] Long case study text for Round 3 Case 1. Paste the full narrative here.",
-    "summary": "[PLACEHOLDER] Short summary for leverage screen — Case 1",
+    "title": "FCNR issuance and fund inflow",
+    "caseText": "Scenario: In an illustrative macroeconomic scenario, Indian commercial banks experience a surge in Foreign Currency Non-Resident (Bank) [FCNR(B)] deposits due to attractive global interest rate differentials. Mohapada Commercial Bank mobilises $1.5 billion in 3-year FCNR(B) deposits. To deploy these proceeds domestically while hedging currency risk, Mohapada Bank enters into a USD/INR sell/buy swap with the Reserve Bank of India (RBI), delivering US dollars spot in exchange for rupees and agreeing to repurchase the dollars at a predetermined forward rate upon maturity. Across the banking sector, similar swap operations and RBI spot dollar purchases to bolster foreign-exchange reserves inject ₹2.4 lakh crore of durable rupee liquidity into the system. Consequently, the Weighted Average Call Rate (WACR) falls to 6.28%, drifting toward the Standing Deposit Facility (SDF) rate of 6.25% and well below the illustrative policy repo rate of 6.50%. Meanwhile, domestic credit off-take remains moderate, leaving Mohapada Bank’s treasury with ₹8,500 crore in surplus rupee balances. The 91-day Treasury Bill yields 6.42%, and the 10-year benchmark Government Security (G-Sec) yields 6.85%. However, looking ahead 36 months, Mohapada Bank faces a concentrated dollar repayment obligation when the FCNR(B) deposits and the RBI swap mature simultaneously, exposing the bank to potential dollar liquidity tightness and domestic cash-flow mismatches if not managed proactively.",
     "questions": [
       {
         "id": "r3-c1-q1",
-        "question": "[PLACEHOLDER] Round 3 Case 1 Question 1",
+        "question": "Given the immediate surplus of ₹8,500 crore, the call rate at 6.28%, and the need to preserve short-term flexibility while earning a return above the overnight floor, which action is most appropriate for Mohapada Bank’s treasury?",
         "options": [
           {
             "id": "A",
-            "text": "[PLACEHOLDER] Option A — replace with real text"
+            "text": "Conduct an Open Market Operation (OMO) sale of G-Secs to the market to absorb the excess systemic liquidity."
           },
           {
             "id": "B",
-            "text": "[PLACEHOLDER] Option B — replace with real text"
+            "text": "Deploy a portion of the surplus into 91-day Treasury Bills at 6.42% and bid in the RBI’s Variable Rate Reverse Repo (VRRR) auctions, while parking residual overnight balances in the SDF."
           },
           {
             "id": "C",
-            "text": "[PLACEHOLDER] Option C — replace with real text"
+            "text": "Borrow additional overnight funds through the RBI’s Variable Rate Repo (VRR) window to lock in current low short-term rates."
           },
           {
             "id": "D",
-            "text": "[PLACEHOLDER] Option D — replace with real text"
+            "text": "Hold the entire ₹8,500 crore in unremunerated excess Cash Reserve Ratio (CRR) balances with the RBI to eliminate interest rate risk completely."
           }
         ]
       },
       {
         "id": "r3-c1-q2",
-        "question": "[PLACEHOLDER] Round 3 Case 1 Question 2",
+        "question": "Concerned that the ₹2.4 lakh crore liquidity surplus is pushing the WACR persistently toward the SDF floor of 6.25% and weakening monetary policy transmission, the RBI decides to absorb liquidity temporarily for 14 days without permanently altering its G-Sec portfolio. Which instrument should the RBI utilise, and how does it differ from the SDF?",
         "options": [
           {
             "id": "A",
-            "text": "[PLACEHOLDER] Option A — replace with real text"
+            "text": "Conduct a 14-day Variable Rate Reverse Repo (VRRR) auction, which absorbs term liquidity against G-Sec collateral at market-discovered rates up to the repo rate, whereas the SDF absorbs overnight liquidity without collateral at a fixed floor rate."
           },
           {
             "id": "B",
-            "text": "[PLACEHOLDER] Option B — replace with real text"
+            "text": "Conduct a 14-day Variable Rate Repo (VRR) auction, which absorbs liquidity against G-Sec collateral, unlike the uncollateralised SDF."
           },
           {
             "id": "C",
-            "text": "[PLACEHOLDER] Option C — replace with real text"
+            "text": "Lower the SDF rate by 25 basis points to encourage banks to deposit more surplus funds overnight."
           },
           {
             "id": "D",
-            "text": "[PLACEHOLDER] Option D — replace with real text"
+            "text": "Issue new 10-year dated Government Securities directly on its own balance sheet to permanently drain the 14-day surplus."
           }
         ]
       },
       {
         "id": "r3-c1-q3",
-        "question": "[PLACEHOLDER] Round 3 Case 1 Question 3",
+        "question": "Suppose Mohapada Bank uses ₹2,000 crore of its surplus to purchase 10-year G-Secs in the secondary interbank market from another commercial bank, while on the same day the RBI conducts an OMO outright sale of ₹10,000 crore of G-Secs to commercial banks. All else equal, what is the combined effect on aggregate banking-system rupee liquidity and secondary-market G-Sec yields?",
         "options": [
           {
             "id": "A",
-            "text": "[PLACEHOLDER] Option A — replace with real text"
+            "text": "Both Mohapada Bank’s purchase and the RBI’s OMO sale reduce aggregate banking-system liquidity by ₹12,000 crore and push G-Sec yields down."
           },
           {
             "id": "B",
-            "text": "[PLACEHOLDER] Option B — replace with real text"
+            "text": "Mohapada Bank’s secondary-market purchase redistributes reserves between commercial banks without changing aggregate systemic liquidity, whereas the RBI’s ₹10,000 crore OMO sale absorbs durable systemic liquidity and exerts upward pressure on G-Sec yields."
           },
           {
             "id": "C",
-            "text": "[PLACEHOLDER] Option C — replace with real text"
+            "text": "Mohapada Bank’s purchase injects ₹2,000 crore of new systemic liquidity, partially offsetting the ₹10,000 crore absorbed by the RBI’s OMO sale, leaving yields unchanged."
           },
           {
             "id": "D",
-            "text": "[PLACEHOLDER] Option D — replace with real text"
+            "text": "The RBI’s OMO sale injects ₹10,000 crore of rupee liquidity into the system, driving G-Sec prices up and yields down."
           }
         ]
       },
       {
         "id": "r3-c1-q4",
-        "question": "[PLACEHOLDER] Round 3 Case 1 Question 4",
+        "question": "Six months before the 3-year FCNR(B) deposits and the USD/INR sell/buy swap mature, domestic rupee liquidity tightens into a systemic deficit, pushing short-term rupee rates higher, while 30% of the FCNR(B) depositors signal they will withdraw their dollars upon maturity rather than roll them over. What is the primary challenge facing Mohapada Bank’s treasury at maturity, and what is the most prudent preparatory response?",
         "options": [
           {
             "id": "A",
-            "text": "[PLACEHOLDER] Option A — replace with real text"
+            "text": "The bank faces unhedged spot exchange-rate depreciation risk on the principal; it should immediately cancel the RBI swap without penalty."
           },
           {
             "id": "B",
-            "text": "[PLACEHOLDER] Option B — replace with real text"
+            "text": "The bank must deliver rupees to the RBI to receive the swapped dollars for paying retiring depositors, causing a sharp rupee outflow during a tight domestic liquidity phase; the treasury should build a buffer of maturing liquid rupee assets (such as T-Bills) and arrange forward swap rollovers for the retained deposits."
           },
           {
             "id": "C",
-            "text": "[PLACEHOLDER] Option C — replace with real text"
+            "text": "The bank will experience a sudden influx of rupees on maturity when the swap unwinds; it should commit those anticipated rupees into long-term 15-year infrastructure loans today."
           },
           {
             "id": "D",
-            "text": "[PLACEHOLDER] Option D — replace with real text"
+            "text": "Because the original transaction was a sell/buy swap with the RBI, the RBI automatically assumes the liability to repay the FCNR(B) depositors directly, requiring no action from Mohapada Bank."
           }
         ]
       }
@@ -97,95 +96,94 @@
   },
   {
     "id": "r3-case2",
-    "title": "[PLACEHOLDER] Case 2 Title",
-    "caseText": "[PLACEHOLDER] Long case study text for Round 3 Case 2. Paste the full narrative here.",
-    "summary": "[PLACEHOLDER] Short summary for leverage screen — Case 2",
+    "title": "Repo rate reduction",
+    "caseText": "Scenario: In an illustrative economic scenario, India’s headline Consumer Price Index (CPI) inflation decelerates steadily over four quarters from 5.1% to 3.2% (a phase of pronounced disinflation), accompanied by a negative output gap, weak private consumption, and a sub-zero Wholesale Price Index (WPI) reading for manufactured goods. Industrial credit growth at Whiterock National Bank slows to an annualised 6.5%, well below its deposit growth of 11.2%. At its latest Monetary Policy Committee (MPC) review, the RBI cuts the policy repo rate by 25 basis points from 6.50% to 6.25% and shifts its stance to accommodative, signalling comfort with maintaining a banking-system liquidity surplus to aid transmission.\n\nTo reinforce durable liquidity, the RBI also announces an Open Market Operation (OMO) purchase of ₹25,000 crore of dated Government Securities. Following the announcement, the 10-year benchmark G-Sec yield declines from 6.75% to 6.52%. Whiterock National Bank holds a Statutory Liquidity Ratio (SLR) portfolio at 22% of Net Demand and Time Liabilities (NDTL), well above the statutory minimum of 18%. While the bank’s treasury desk sees an opportunity to book capital gains on long-dated G-Secs as yields fall, the Chief Risk Officer warns that government fiscal borrowing could surprise on the upside in the second half of the year, potentially reversing the yield rally and causing mark-to-market (MTM) losses in the Available-for-Sale (AFS) and Fair Value Through Profit and Loss (FVTPL) portfolios.",
     "questions": [
       {
         "id": "r3-c2-q1",
-        "question": "[PLACEHOLDER] Round 3 Case 2 Question 1",
+        "question": "Following the RBI’s 25-basis-point repo rate cut and shift to an accommodative stance, how do existing fixed-coupon G-Sec prices and secondary-market yields respond, all else equal, and why does this differ across maturities?",
         "options": [
           {
             "id": "A",
-            "text": "[PLACEHOLDER] Option A — replace with real text"
+            "text": "Existing G-Sec prices rise and yields fall because new bonds will be issued at higher rates."
           },
           {
             "id": "B",
-            "text": "[PLACEHOLDER] Option B — replace with real text"
+            "text": "Short-term T-Bill prices experience a larger percentage capital gain than 10-year G-Secs because short-term instruments are closer to the repo rate."
           },
           {
             "id": "C",
-            "text": "[PLACEHOLDER] Option C — replace with real text"
+            "text": "Only overnight money-market rates decline, while fixed-coupon bond prices remain fixed at par value (₹100) until maturity regardless of secondary-market yield movements."
           },
           {
             "id": "D",
-            "text": "[PLACEHOLDER] Option D — replace with real text"
+            "text": "Existing G-Sec prices rise and yields fall across the curve, with longer-duration bonds experiencing a larger percentage price increase than short-term T-Bills for a given decline in yield due to their higher modified duration."
           }
         ]
       },
       {
         "id": "r3-c2-q2",
-        "question": "[PLACEHOLDER] Round 3 Case 2 Question 2",
+        "question": "With corporate credit demand sluggish and deposit inflows strong, how should Whiterock National Bank’s treasury manage its excess SLR holdings and incremental funds in the immediate aftermath of the rate cut?",
         "options": [
           {
             "id": "A",
-            "text": "[PLACEHOLDER] Option A — replace with real text"
+            "text": "Immediately liquidate its entire excess SLR portfolio (4% of NDTL) and force-lend the proceeds to lower-rated corporate borrowers at below-market rates to boost credit growth."
           },
           {
             "id": "B",
-            "text": "[PLACEHOLDER] Option B — replace with real text"
+            "text": "Retain and selectively add medium-to-long-tenor G-Secs in trading books to capture capital appreciation from falling yields and earn carry above the SDF rate, while gradually passing on lower funding costs (via MCLR and external benchmark resets) to stimulate creditworthy loan demand."
           },
           {
             "id": "C",
-            "text": "[PLACEHOLDER] Option C — replace with real text"
+            "text": "Refuse all new customer deposits and park 100% of existing excess funds in the overnight SDF at 6.00%, completely avoiding the G-Sec market."
           },
           {
             "id": "D",
-            "text": "[PLACEHOLDER] Option D — replace with real text"
+            "text": "Purchase high-coupon corporate bonds with poor credit ratings in the Held-to-Maturity (HTM) book, assuming the RBI rate cut eliminates default risk during an economic slowdown."
           }
         ]
       },
       {
         "id": "r3-c2-q3",
-        "question": "[PLACEHOLDER] Round 3 Case 2 Question 3",
+        "question": "What is the direct impact of the RBI’s ₹25,000 crore OMO purchase of dated G-Secs on the banking system, and how does it differ from a temporary 7-day Variable Rate Repo (VRR) injection?",
         "options": [
           {
             "id": "A",
-            "text": "[PLACEHOLDER] Option A — replace with real text"
+            "text": "The OMO purchase absorbs ₹25,000 crore of rupee liquidity and pushes G-Sec yields up, whereas a 7-day VRR injects permanent liquidity."
           },
           {
             "id": "B",
-            "text": "[PLACEHOLDER] Option B — replace with real text"
+            "text": "Both the OMO purchase and the 7-day VRR permanently expand the RBI’s holdings of G-Secs and have identical effects on the 10-year bond yield."
           },
           {
             "id": "C",
-            "text": "[PLACEHOLDER] Option C — replace with real text"
+            "text": "The OMO purchase injects ₹25,000 crore of durable reserve money into the banking system and directly adds purchase demand in the bond market (compressing G-Sec yields), whereas a 7-day VRR provides only temporary short-term liquidity that reverses upon maturity."
           },
           {
             "id": "D",
-            "text": "[PLACEHOLDER] Option D — replace with real text"
+            "text": "The OMO purchase affects only the secondary bond market and has no bearing on commercial banks’ reserve balances with the RBI. VRRR injects short-term liquidity."
           }
         ]
       },
       {
         "id": "r3-c2-q4",
-        "question": "[PLACEHOLDER] Round 3 Case 2 Question 4",
+        "question": "Three months later, inflation expectations bottom out and the government announces an unexpected ₹50,000 crore increase in market borrowing, causing the 10-year G-Sec yield to show early signs of rising from 6.45%. Which portfolio strategy best balances Whiterock National Bank’s profitability, duration risk, and regulatory liquidity requirements?",
         "options": [
           {
             "id": "A",
-            "text": "[PLACEHOLDER] Option A — replace with real text"
+            "text": "Increase portfolio duration further by shifting all short-term T-Bills into 30-year G-Secs in the FVTPL book to average down as bond prices fall."
           },
           {
             "id": "B",
-            "text": "[PLACEHOLDER] Option B — replace with real text"
+            "text": "Realise capital gains on long-duration G-Secs in the AFS/FVTPL trading books and shorten portfolio duration by shifting into shorter-tenor T-Bills or floating-rate bonds, shielding the P&L from mark-to-market losses while maintaining required SLR and Liquidity Coverage Ratio (LCR) buffers."
           },
           {
             "id": "C",
-            "text": "[PLACEHOLDER] Option C — replace with real text"
+            "text": "Sell G-Secs until the bank’s SLR holdings fall to 14% of NDTL (below the 18% statutory requirement) to avoid any mark-to-market impact."
           },
           {
             "id": "D",
-            "text": "[PLACEHOLDER] Option D — replace with real text"
+            "text": "Request the RBI to buy back the bank’s entire G-Sec portfolio at historical cost through the Marginal Standing Facility (MSF)."
           }
         ]
       }

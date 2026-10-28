@@ -75,6 +75,10 @@ console.log({ data, error });
 
 When a round timer reaches **zero**, the server auto-finalises the round (pg_cron every 15 seconds, plus client refresh). **Every unanswered question scores 0 with no penalty**, including Round 3 Option 2 (high leverage). Wrong answers already submitted keep their server-computed scores.
 
+Round 2 awards **10 points per correct answer** and 0 points for an incorrect answer. Apply `supabase/migrations/005_round2_scoring.sql` to update the server-side scoring function and recalculate existing Round 2 scores.
+
+Round 1 awards **5 points per correct answer** and 0 points for an incorrect answer. Its existing 5-point speed bonus is unchanged. Apply `supabase/migrations/006_round1_scoring.sql` to update the server-side scoring function and recalculate existing Round 1 base scores.
+
 ## Config assumptions (easy to change)
 
 | Constant | Location | Default |
