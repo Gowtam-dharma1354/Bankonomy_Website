@@ -2,8 +2,8 @@ import type { Round2Case } from "../types";
 
 const caseStudy: Round2Case = {
   id: "r2-case2",
-  title: "QuantEdge Broking & Algo-Tech Ltd.",
-  caseText: `Company background: QuantEdge Broking & Algo-Tech Ltd. is a listed fintech firm providing low-latency algorithmic execution platforms to retail discount brokers and proprietary trading desks. Driven by a surge in derivatives trading volumes, its revenue doubled over two years to ₹280 crore, with a healthy EBITDA margin of 28% and minimal long-term debt of ₹15 crore. QuantEdge seeks an ₹85 crore 4-year facility to upgrade its co-location server infrastructure and meet increased working capital margin requirements at clearing corporations.
+  title: `Company background:`,
+  caseText: ` QuantEdge Broking & Algo-Tech Ltd. is a listed fintech firm providing low-latency algorithmic execution platforms to retail discount brokers and proprietary trading desks. Driven by a surge in derivatives trading volumes, its revenue doubled over two years to ₹280 crore, with a healthy EBITDA margin of 28% and minimal long-term debt of ₹15 crore. QuantEdge seeks an ₹85 crore 4-year facility to upgrade its co-location server infrastructure and meet increased working capital margin requirements at clearing corporations.
 
 As security, the company offers a charge on its software intellectual property (IP) and office furniture, plus a personal guarantee from the founders. However, 65% of QuantEdge’s revenue comes from just three retail discount brokerages. Furthermore, the market regulator has released a consultation paper proposing stricter position limits and higher lot sizes on index options to curb speculative retail trading. QuantEdge’s illustrative stock valuation trades at a high price-to-earnings multiple, though equity optimism does not mitigate cash-flow volatility. Operating cash flows fluctuate sharply from quarter to quarter depending on market turnover, and one major brokerage client is already building an in-house execution engine.`,
   questions: [

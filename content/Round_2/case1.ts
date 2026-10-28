@@ -2,8 +2,8 @@ import type { Round2Case } from "../types";
 
 const caseStudy: Round2Case = {
   id: "r2-case1",
-  title: "Vardhan Precision Forgings Ltd.",
-  caseText: `Company background: Vardhan Precision Forgings Ltd. (VPFL) manufactures specialized steel components for commercial vehicles and railways. Over the last three years, annual revenue grew steadily by 14% to reach ₹620 crore, supported by consistent operating cash flows and a stable EBITDA margin of 16%. VPFL currently maintains low leverage, with a Debt-to-EBITDA ratio of 1.6x and an Interest Coverage Ratio (ICR) of 4.2x.
+  title: `Company background:`,
+  caseText: `Vardhan Precision Forgings Ltd. (VPFL) manufactures specialized steel components for commercial vehicles and railways. Over the last three years, annual revenue grew steadily by 14% to reach ₹620 crore, supported by consistent operating cash flows and a stable EBITDA margin of 16%. VPFL currently maintains low leverage, with a Debt-to-EBITDA ratio of 1.6x and an Interest Coverage Ratio (ICR) of 4.2x.
 
 VPFL is requesting a 6-year term loan of ₹120 crore to set up an automated forging line in Pune, pledging the new plant and machinery as primary collateral alongside a 25% promoter equity contribution. While domestic railway demand remains strong, a single European automotive client accounts for 35% of total revenue. Recently, VPFL’s illustrative stock price fell by 18% after market analysts flagged rising energy costs in Europe; however, stock-price performance is contextual market evidence and not a substitute for fundamental credit analysis. Additionally, alloy steel input prices have become volatile, and the European client is currently renegotiating its three-year supply contract, requesting a 60-day extension in credit terms without a fixed minimum off-take guarantee.`,
   questions: [

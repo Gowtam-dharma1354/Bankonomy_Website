@@ -2,7 +2,7 @@ import type { Round2Case } from "../types";
 
 const caseStudy: Round2Case = {
   id: "r2-case4",
-  title: "ArogyaSynth API Pharmaceuticals Ltd.",
+  title: "Company background:",
   caseText: `ArogyaSynth API Pharmaceuticals Ltd. manufactures Active Pharmaceutical Ingredients (APIs) for cardiovascular and anti-diabetic drugs, generating ₹880 crore in annual revenue. Two years ago, its EBITDA margin dipped from 20% to 12% due to sudden price spikes in imported chemical Key Starting Materials (KSMs) and higher freight costs. Following backward integration and renegotiated annual supply contracts, margins recovered to 17.5% over the last two quarters. Leverage remains moderate with a Debt-to-EBITDA ratio of 2.3x and an Interest Coverage Ratio of 3.1x.
 
 ArogyaSynth seeks a ₹160 crore 5-year term loan to commission a backward-integrated fermentation unit that qualifies under the government’s Production Linked Incentive (PLI) scheme, aiming to reduce imported KSM dependence from 65% to 25%. The company offers a first pari-passu charge on fixed assets (asset coverage ratio of 1.8x). However, the US Food and Drug Administration (USFDA) recently concluded a routine inspection at ArogyaSynth’s flagship plant—which contributes 40% of revenue—and issued three procedural observations regarding laboratory data logging. Management has submitted corrective actions, and final regulatory clearance is expected within 60 days.`,

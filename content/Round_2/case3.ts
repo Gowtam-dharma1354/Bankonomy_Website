@@ -2,12 +2,8 @@ import type { Round2Case } from "../types";
 
 const caseStudy: Round2Case = {
   id: "r2-case3",
-  title: "Dakshin-Path Tollways & Infra Corp.",
-  caseText: `Adapted real-world scenario – Infrastructure
-
-Note: This case is inspired by real-world credit dynamics in the Indian road infrastructure sector and is not a verbatim reproduction of an actual historical transaction.
-
-Company background:Dakshin-Path Tollways & Infra Corp. (DPTIC) is an EPC and build-operate-transfer (BOT) road developer with annual revenues of ₹1,450 crore. While its order book stands at a healthy ₹4,200 crore, consolidated debt has risen to ₹2,900 crore, pulling its Interest Coverage Ratio down to 1.25x. DPTIC is requesting a ₹300 crore term loan for equipment purchases and mobilization advances for a newly awarded highway project.
+  title: `Company background:`,
+  caseText: `Dakshin-Path Tollways & Infra Corp. (DPTIC) is an EPC and build-operate-transfer (BOT) road developer with annual revenues of ₹1,450 crore. While its order book stands at a healthy ₹4,200 crore, consolidated debt has risen to ₹2,900 crore, pulling its Interest Coverage Ratio down to 1.25x. DPTIC is requesting a ₹300 crore term loan for equipment purchases and mobilization advances for a newly awarded highway project.
 
 Despite steady construction margins of 13%, operating cash flows have been negative for two consecutive years. Nearly ₹680 crore of DPTIC’s net worth is locked as equity investments and unsecured loans in three operational toll-road subsidiaries (SPVs) where commercial traffic has fallen 30% short of initial projections due to competing state highways. Furthermore, ₹450 crore in receivables is tied up in prolonged arbitration claims with state nodal agencies. The company’s promoters have already pledged 72% of their shareholding to existing lenders. DPTIC offers a subservient charge on current assets and a corporate guarantee from one of its underperforming toll SPVs as security for the ₹300 crore loan.`,
   questions: [
