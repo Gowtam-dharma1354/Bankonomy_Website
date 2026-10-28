@@ -177,28 +177,11 @@ textarea {
   box-shadow: 0 0 0 4rem rgba(245, 197, 24, 0.035), 0 0 0 9rem rgba(245, 197, 24, 0.025);
 }
 
-.welcome-topline,
 .welcome-footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-}
-
-.welcome-topline {
-  font-size: 0.9rem;
-  color: #d8dfdf;
-}
-
-.welcome-mark {
-  display: grid;
-  place-items: center;
-  width: 2.5rem;
-  aspect-ratio: 1;
-  border: 1px solid var(--yellow);
-  color: var(--yellow);
-  font-family: var(--font-mono);
-  font-weight: 700;
 }
 
 .welcome-content {
@@ -460,27 +443,51 @@ textarea {
   border-radius: 8px;
 }
 
-.round-violation-card {
-  background: #f9e8e4;
-  color: #8c3d32;
+.round-fullscreen-card {
+  display: flex;
+  align-items: center;
+  background: #e7eef6;
+  color: var(--navy);
 }
 
-.round-violation-card .violation-badge {
-  padding: 0;
-  background: transparent;
-  color: inherit;
-  font-size: 1.15rem;
+.fullscreen-exit-indicator {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.fullscreen-exit-indicator svg {
+  flex: 0 0 2rem;
+  width: 2rem;
+  height: 2rem;
+  padding: 0.35rem;
+  border-radius: 7px;
+  background: rgba(15, 39, 68, 0.08);
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
+.fullscreen-exit-count {
+  font-family: var(--font-mono);
+  font-size: 1.55rem;
   font-weight: 800;
+  line-height: 1;
 }
 
-.round-violation-card .violation-sub {
-  margin-top: 0.35rem;
-  font-size: 1rem;
-  font-weight: 700;
+.fullscreen-exit-label {
+  max-width: 4.5rem;
+  color: #52677e;
+  font-size: 0.68rem;
+  font-weight: 750;
+  line-height: 1.2;
+  text-transform: uppercase;
 }
 
-.round-violation-card .violation-hot {
-  color: #a52e28;
+.round-fullscreen-card .fullscreen-exit-indicator {
+  width: 100%;
 }
 
 .round-timer-card {
@@ -681,24 +688,6 @@ textarea {
 
 .case-actions .case-next {
   min-width: 9rem;
-}
-
-.violation-badge {
-  font-size: 0.85rem;
-  padding: 0.25rem 0.5rem;
-  border-radius: 4px;
-  background: #eef2f6;
-}
-
-.violation-hot {
-  background: #fee4e2;
-  color: var(--error);
-  font-weight: 700;
-}
-
-.violation-sub {
-  display: block;
-  font-size: 0.75rem;
 }
 
 .leverage-stage {

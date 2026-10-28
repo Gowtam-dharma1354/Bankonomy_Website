@@ -22,7 +22,7 @@ type OverallRow = {
   round3_score: number;
   total_score: number;
   total_time_taken: number | null;
-  tab_switches: number;
+  fullscreen_exits: number;
   rank: number;
 };
 
@@ -40,7 +40,6 @@ type R1Row = {
   current_question_index: number;
   question_order: string[] | null;
   fullscreen_exits: number;
-  tab_switches: number;
   rank: number;
 };
 
@@ -50,9 +49,9 @@ type R2Row = {
   batch: string;
   disqualified: boolean;
   total_score: number;
+  fullscreen_exits: number;
   cases_solved: number;
   time_taken: number | null;
-  tab_switches: number;
   status: string | null;
   current_case_index: number;
   case_order: string[] | null;
@@ -69,8 +68,8 @@ type R3Row = {
   case1_score: number;
   case2_score: number;
   total_score: number;
+  fullscreen_exits: number;
   time_taken: number | null;
-  tab_switches: number;
   status: string | null;
   current_case_index: number;
   case_order: string[] | null;
@@ -443,7 +442,7 @@ export function Admin() {
                     <th>R3</th>
                     <th>Total</th>
                     <th>Overall Time</th>
-                    <th>Tab Switches</th>
+                    <th>FS Exits</th>
                     <th>Status</th>
                     <th>Actions</th>
                   </tr>
@@ -459,7 +458,7 @@ export function Admin() {
                       <td>{row.round3_score}</td>
                       <td>{row.total_score}</td>
                       <td>{formatDuration(row.total_time_taken)}</td>
-                      <td>{row.tab_switches}</td>
+                      <td>{row.fullscreen_exits}</td>
                       <td>{overallStatusLabel(row, [r1, r2, r3])}</td>
                       <td className="actions-cell">
                         <button type="button" onClick={() => void rpcAdminDisqualify(row.team_id, true).then(refresh)}>DQ</button>
@@ -506,7 +505,6 @@ export function Admin() {
                     <th>Q Solved</th>
                     <th>Current Q</th>
                     <th>Time</th>
-                    <th>Tab Sw</th>
                     <th>FS exits</th>
                     <th>Status</th>
                   </tr>
@@ -523,7 +521,6 @@ export function Admin() {
                       <td>{row.questions_solved}</td>
                       <td>{currentQuestion(row.team_id)}</td>
                       <td>{formatDuration(row.time_taken)}</td>
-                      <td>{row.tab_switches}</td>
                       <td>{row.fullscreen_exits}</td>
                       <td>{statusLabel(row)}</td>
                     </tr>
@@ -546,7 +543,7 @@ export function Admin() {
                     <th>Cases</th>
                     <th>Current case</th>
                     <th>Time</th>
-                    <th>Tab Sw</th>
+                    <th>FS exits</th>
                     <th>Status</th>
                   </tr>
                 </thead>
@@ -560,7 +557,7 @@ export function Admin() {
                       <td>{row.cases_solved}</td>
                       <td>{currentCase(row.team_id, 2)}</td>
                       <td>{formatDuration(row.time_taken)}</td>
-                      <td>{row.tab_switches}</td>
+                      <td>{row.fullscreen_exits}</td>
                       <td>{statusLabel(row)}</td>
                     </tr>
                   ))}
@@ -585,7 +582,7 @@ export function Admin() {
                     <th>Total</th>
                     <th>Current case</th>
                     <th>Time</th>
-                    <th>Tab Sw</th>
+                    <th>FS exits</th>
                     <th>Status</th>
                   </tr>
                 </thead>
@@ -602,7 +599,7 @@ export function Admin() {
                       <td>{row.total_score}</td>
                       <td>{currentCase(row.team_id, 3)}</td>
                       <td>{formatDuration(row.time_taken)}</td>
-                      <td>{row.tab_switches}</td>
+                      <td>{row.fullscreen_exits}</td>
                       <td>{statusLabel(row)}</td>
                     </tr>
                   ))}

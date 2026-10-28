@@ -3,10 +3,6 @@ import { Link } from "react-router-dom";
 export function Welcome() {
   return (
     <main className="event-welcome">
-      <header className="welcome-topline">
-        <span className="welcome-mark" aria-hidden="true">B</span>
-        <span>Banking and Economy Club</span>
-      </header>
       <section className="welcome-content" aria-labelledby="welcome-title">
         <p className="welcome-kicker">NISM · Presents</p>
         <h1 id="welcome-title">Bankonomy</h1>

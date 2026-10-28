@@ -1,9 +1,9 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { FullscreenGuard } from "../components/FullscreenGuard";
+import { FullscreenExitIndicator } from "../components/FullscreenExitIndicator";
 import { QuestionCard } from "../components/QuestionCard";
 import { BonusTimer, Timer } from "../components/Timer";
-import { ViolationBadge } from "../components/ViolationBadge";
 import { useRoundState } from "../hooks/useRoundState";
 import { getRound1Question } from "../lib/content";
 import { getSessionToken } from "../lib/session";
@@ -81,7 +81,7 @@ export function Round1() {
             </span>
           </div>
           <div className="round-header-right">
-            <div className="round-metric-card round-violation-card"><ViolationBadge violations={slice.violations} /></div>
+            <div className="round-metric-card round-fullscreen-card"><FullscreenExitIndicator count={slice.violations.fullscreen_exit} /></div>
             <div className="round-metric-card round-timer-card">
               <Timer deadlineIso={slice.deadline} label="Time remaining" onExpire={onRoundExpire} />
               <BonusTimer startedAtIso={answerRow?.started_at ?? null} />

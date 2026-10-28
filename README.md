@@ -79,6 +79,8 @@ Round 2 awards **10 points per correct answer** and 0 points for an incorrect an
 
 Round 1 awards **5 points per correct answer** and 0 points for an incorrect answer. Its existing 5-point speed bonus is unchanged. Apply `supabase/migrations/006_round1_scoring.sql` to update the server-side scoring function and recalculate existing Round 1 base scores.
 
+Apply `supabase/migrations/007_fullscreen_exit_standings.sql` to expose fullscreen-exit counts in the Round 2, Round 3, and overall admin standings.
+
 ## Config assumptions (easy to change)
 
 | Constant | Location | Default |
