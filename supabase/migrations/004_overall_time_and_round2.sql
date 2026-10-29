@@ -231,7 +231,7 @@ BEGIN
     v_duration := interval '30 minutes';
     SELECT jsonb_agg(c ORDER BY random()) INTO v_corder FROM unnest(r2_case_ids()) AS c;
   ELSE
-    v_duration := interval '30 minutes';
+    v_duration := interval '25 minutes';
     SELECT jsonb_agg(c ORDER BY random()) INTO v_corder FROM unnest(r3_case_ids()) AS c;
   END IF;
 

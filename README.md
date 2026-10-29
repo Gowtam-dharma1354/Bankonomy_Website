@@ -86,7 +86,7 @@ Apply `supabase/migrations/007_fullscreen_exit_standings.sql` to expose fullscre
 | Constant | Location | Default |
 |----------|----------|---------|
 | Violation badge threshold | `src/config/constants.ts` | `3` |
-| Round 3 duration (minutes) | `src/config/constants.ts` | `30` (must match SQL) |
+| Round 3 duration (minutes) | `src/config/constants.ts` | `25` (must match SQL) |
 | Tiebreaker order | `supabase/migrations/001_init.sql` views | total ↓, time ↑, tab switches ↑ |
 
 ## Scripts
